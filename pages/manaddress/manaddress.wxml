@@ -1,0 +1,46 @@
+<!--为空时展示的图片信息-->
+<view wx:if="{{list.length==0}}" class="flex flex-column hiddle-pic">
+  <view class="flex flex-center">
+    <image class="pics" src="../../image/null.png "></image>
+  </view>
+  <view class="flex flex-center">
+    <text class="pic-buttom">
+      亲,此处暂无地址
+    </text>
+  </view>
+
+  <!--<view class="flex flex-center">
+    <text class="flex flex-center pic-shopping-text">
+      去购物
+    </text>
+  </view>-->
+</view>
+<view wx:if="{{list.length>0}}" class="container">
+  <view wx:for="{{list}}" wx:for-index="idx" wx:for-item="itemName" wx:key="" class="flex flex-space list-item">
+    <view class="flex flex-center" data-ind="{{idx}}" bindtap="bindcheckbox">
+      <icon wx:if="{{itemName.checkboxs}}" class="flex icon-center " type="success" size="20 " color="#0bb3cc" />
+      <icon wx:else='' class="flex icon-center" type="circle" size="20" />
+    </view>
+    <view class='flex flex-column flex-box'>
+      <view class="flex flex-space flex-row">
+        <view class="flex">
+          <text class='font28 color2'>收货人：</text>
+          <text class='font28 color2'>{{itemName.name}}</text>
+        </view>
+        <view class="flex">
+          <text class='font28 color2'>{{itemName.misphone}}</text>
+        </view>
+      </view>
+      <view class="flex list-content" data-aindex="{{idx}}" bindtap="backpage">
+        <text class='font26 color4'>{{itemName.address}}</text>
+        <text class='font26 colorblue'>（默认地址）</text>
+      </view>
+    </view>
+    <view class="flex flex-center">
+      <image src='../../image/edit.png' class='editicon'></image>
+    </view>
+  </view>
+</view>
+<view class="flex foot-btn center" bindtap="goAddAddress">
+  <text class="btn-color">添加地址</text>
+</view>

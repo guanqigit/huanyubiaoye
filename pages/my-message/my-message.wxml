@@ -1,0 +1,61 @@
+<view class='container'>
+  <view class='message-nav flex flex-row flex-space flex-centers'>
+    <view catchtap='xitongMessage'>
+      <view class='{{isActive?"message-active":" "}}'>
+        <text>系统消息</text>
+        <view wx:if="{{isActive}}" class='nav-active-line'></view>
+      </view>
+    </view>
+    <view catchtap='dianpuMessage'>
+      <view class='{{!isActive?"message-active":" "}}'>
+        <text>店铺消息</text>
+        <view wx:if="{{!isActive}}" class='nav-active-line'></view>
+      </view>
+    </view>
+  </view>
+  <!-- 系统消息 -->
+  <view class='xitong-message' wx:if="{{isActive}}">
+    <view class='message-time'>
+      <text>昨天 09:06</text>
+    </view>
+    <view class='message-unit'>
+      <view class='message-title flex flex-row flex-centers'>
+        <view class='notReady-dian'></view>
+        <text>拉拉阿拉啦啦啦</text>
+      </view>
+      <view class='message-body flex flex-row flex-centers'>
+        <image class='message-logo' src='/image/eg.png'></image>
+        <view class='message-text'>
+          <text>系统升级2.0版本，添加了左滑删除等功能，速速体验吧。</text>
+        </view>
+      </view>
+    </view>
+    <view class='message-unit'>
+      <view class='message-title flex flex-row flex-centers'>
+        <view class='notReady-dian'></view>
+        <text>拉拉阿拉啦啦啦</text>
+      </view>
+      <view class='message-body flex flex-row flex-centers'>
+        <image class='message-logo' src='/image/eg.png'></image>
+        <view class='message-text'>
+          <text>系统升级2.0版本，添加了左滑删除等功能，速速体验吧。</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 店铺消息 -->
+  <view wx:if="{{!isActive}}" class='dianpu-message'>
+    <view class='message-time'>
+      <text>昨天 09:06</text>
+    </view>
+    <view class='message-unit flex flex-row flex-centers'>
+      <view class='message-body flex flex-row flex-centers' style='margin-top:0'>
+        <image class='dianpu-message-logo' src='/image/auditionbg.png'></image>
+        <view class='dianpu-message-body  flex  flex-column'>
+          <text>黑人眼镜</text>
+          <view class='dianpu-message-text'><text>进店消费即送200元代金券。部分眼镜买一送一，欢迎广大顾客前来挑选。进店消费即送200元代金券进店消费即送200元代金券。部分眼镜买一送一，欢迎广大顾客前来挑选。进店消费即送200元代金券</text></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

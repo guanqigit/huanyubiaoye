@@ -1,0 +1,288 @@
+page {
+  background-color: #f5f7fa;
+}
+
+.container {
+  padding: 30rpx 30rpx 100rpx;
+}
+
+.container-settlement {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 0rpx 30rpx;
+  align-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+.container-content {
+  background-color: white;
+  padding: 0rpx 30rpx;
+  margin: 30rpx 0;
+}
+
+.container-header {
+  padding: 30rpx 20rpx;
+  background-color: white;
+}
+
+.confim-detail {
+  background-color: white;
+}
+
+.font20 {
+  font-size: 20rpx;
+}
+
+.font22 {
+  font-size: 22rpx;
+}
+
+.font24 {
+  font-size: 24rpx;
+}
+
+.font26 {
+  font-size: 26rpx;
+}
+
+.font28 {
+  font-size: 28rpx;
+}
+
+.color2 {
+  color: #222;
+}
+
+.color4 {
+  color: #444;
+}
+
+.color6 {
+  color: #666;
+}
+
+.color8 {
+  color: #888;
+}
+.colorf {
+  color: #fff;
+}
+.colorblue {
+  color: #0accac;
+}
+
+.colorred {
+  color: #d42502;
+}
+
+.header-address {
+  width: 27rpx;
+  height: 34rpx;
+  margin-right: 15rpx;
+}
+
+.detail-list {
+  padding: 20rpx 0rpx;
+  margin: 0rpx 30rpx;
+  border-top: 2rpx solid #f1f1f1;
+}
+
+.header-res {
+  margin-right: 50rpx;
+  line-height: 35rpx;
+}
+
+.header-title {
+  margin-top: 10rpx;
+}
+
+.header-addrs {
+  padding-left: 57rpx;
+}
+
+.detail-list-first {
+  padding: 20rpx 0rpx;
+  margin: 0rpx 30rpx;
+}
+
+.list-item-border {
+  padding: 20rpx 0;
+}
+
+.list-item {
+  padding: 30rpx 0;
+  height: 150rpx;
+  border-top: 2rpx solid #f1f1f1;
+}
+
+.item-text-right {
+  justify-content: flex-end;
+  font-weight: 600;
+}
+
+.item-color-red {
+  color: #ff4463;
+}
+
+.item-weight {
+  font-weight: 600;
+}
+
+.btn-sett {
+  width: 200rpx;
+  height: 60rpx;
+  position: absolute;
+  left: 20rpx;
+}
+
+.righticon {
+  width: 12rpx;
+  height: 22rpx;
+  margin-left: 8rpx;
+}
+
+.fontw {
+  font-weight: 600;
+}
+
+.font30 {
+  font-size: 30rpx;
+}
+
+.sum-size {
+  font-size: 30rpx;
+}
+
+.listbox {
+  padding: 30rpx;
+  background: #fff;
+}
+.listboxs {
+  padding: 0 30rpx;
+  background: #fff;
+}
+.listline{
+  padding: 25rpx 0;
+}
+.header-more {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+
+.margint30 {
+  margin-top: 30rpx;
+}
+
+.marginb20 {
+  margin-top: 20rpx;
+}
+
+.marginb30 {
+  margin-bottom: 30rpx;
+}
+
+.marginl10 {
+  margin-left: 10rpx;
+}
+.marginr20 {
+  margin-right: 20rpx;
+}
+
+.paddingt20 {
+  padding-top: 20rpx;
+}
+
+.paddingb20 {
+  padding-bottom: 20rpx;
+}
+
+.paddingb30 {
+  padding-bottom: 30rpx;
+}
+
+.insetshop {
+  width: 27rpx;
+  height: 27rpx;
+  margin-right: 10rpx;
+}
+
+.header-right {
+  width: 16rpx;
+  height: 28rpx;
+  margin-left: 12rpx;
+  margin-top: 8rpx;
+}
+
+.listitem {
+  background-color: #fff;
+  box-shadow: 0px 5px 18px 0px rgba(186, 186, 186, 0.38);
+  border-radius: 4px;
+  padding: 30rpx 15rpx 20rpx;
+  margin-top: 20rpx;
+}
+
+.rowline {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  padding: 2rpx;
+}
+
+.listimg {
+  width: 158rpx;
+  height: 132rpx;
+  margin-right: 10rpx;
+}
+
+.listimgs {
+  width: 238rpx;
+  height: 200rpx;
+  margin-right: 20rpx;
+}
+
+.timeicon {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 15rpx;
+}
+
+.borderb {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.borderblue {
+  border: 1px solid #0accac;
+  padding: 0rpx 5rpx;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.borderred {
+  border: 1px solid #d42502;
+  padding: 0rpx 5rpx;
+  white-space: nowrap;
+  text-align: center;
+}
+.settlementbox {
+  width: 100%;
+  height: 90rpx;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border: 1px solid #f0f0f0;
+  border-left: none;
+  border-right: none;
+}
+.settlementbtn {
+  width: 208rpx;
+  height: 100%;
+  background: #0bb3cc;
+}
+.grreyinfo{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 8rpx;
+}

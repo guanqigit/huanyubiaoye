@@ -1,0 +1,74 @@
+<view class="container">
+  <form bindsubmit="formBindsubmit" bindreset="formReset">
+    <view class="flex flex-column list-item">
+      <view class="flex flex-row item-content flex-center">
+        <view class="flex item-name flex-center">
+          <text>收货人</text>
+        </view>
+        <view class="flex flex-box flex-center">
+          <input class="item-inputname" name="username" placeholder-class="pla-css" value="{{list.name}}" type="text" placeholder="请填写收货人姓名" />
+        </view>
+      </view>
+      <view class="flex flex-row item-content flex-center">
+        <view class="flex item-name flex-center">
+          <text>手机号码</text>
+        </view>
+        <view class="flex flex-box flex-center">
+          <input name="phone" class="item-input" value="{{list.phone}}" placeholder-class="pla-css" type="text" maxlength="11" placeholder="请填写收货人电话" />
+        </view>
+      </view>
+      <view class="flex flex-row item-content flex-center">
+        <view class="flex item-name flex-center">
+          <text>选择地区</text>
+        </view>
+        <view class="flex flex-box flex-center">
+          <input name="city" class="item-input" value="{{province}} {{city}} {{county}}" focus="{{focus}}" placeholder-class="pla-css" type="text" placeholder="选择区域" bindfocus="openCityPicker" readyonly/>
+        </view>
+        <view class="flex flex-center">
+          <image class="right-icon" src="../../image/iconj.png"></image>
+        </view>
+      </view>
+      <view class="flex flex-row item-content flex-center">
+        <view class="flex item-name flex-center">
+          <text>详细地址</text>
+        </view>
+        <view class="flex flex-box flex-center">
+          <input class="item-input" placeholder-class="pla-css" name="address" bindblur="bindTextAreaBlur" value="{{list.address}}" auto-height placeholder="街道、楼牌号等" />
+        </view>
+      </view>
+    </view>
+    <view class="flex flex-row flex-space list-items">
+      <view class="flex set-default">
+        <text>设为默认地址</text>
+      </view>
+      <view class="flex flex-center">
+        <radio-group class="radio-group" bindchange="radioChange">
+          <label class="radio">
+            <radio value="more" checked="{{ischecked}}" class='radio' color="#0bb3cc"/>
+          </label>
+        </radio-group>
+      </view>
+    </view>
+    <view class="flex list-btn flex-center">
+      <button class="btn-bc flex" formType="submit">确认</button>
+    </view>
+  </form>
+</view>
+<!--隐藏的省市区选择层-->
+<view wx:if="{{condition}}" class="citypicker">
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 444rpx;" value="{{value}}" bindchange="bindChange" class="citybody">
+    <view class="cityheader">
+      <view bindtap="openCityPicker" class="city-cancel">取消</view>
+      <view bindtap="openCityPicker" class="city-true">确定</view>
+    </view>
+    <picker-view-column>
+      <view wx:for="{{provinces}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{citys}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{countys}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+</view>

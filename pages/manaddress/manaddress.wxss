@@ -1,0 +1,93 @@
+.container, page {
+  background-color: #f5f7fa;
+}
+
+.container {
+  padding: 30rpx 30rpx 100rpx;
+}
+
+.list-item {
+  background-color: white;
+  padding: 20rpx 30rpx;
+  margin-bottom: 20rpx;
+  border-radius: 4px;
+}
+
+.list-content {
+  color: #a5a5a5;
+  font-size: 34rpx;
+  line-height: 50rpx;
+}
+
+.list-bottom {
+  padding-top: 15rpx;
+}
+
+.icon-center {
+  margin-right: 10rpx;
+}
+
+.edit {
+  width: 37rpx;
+  height: 37rpx;
+  margin-right: 10rpx;
+}
+
+.delete {
+  width: 30rpx;
+  height: 37rpx;
+  margin-right: 10rpx;
+  margin-left: 40rpx;
+}
+
+.center {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.foot-btn {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  padding: 10rpx 0;
+}
+
+.btn-color {
+  width: 90%;
+  padding: 15rpx 0;
+  background-color: #26c8e0;
+  box-shadow: 0px 2px 7px 0px rgba(11, 179, 204, 0.38);
+  border-radius: 4px;
+  color: white;
+  font-size: 28rpx;
+  margin: 0 auto;
+}
+
+.editicon {
+  width: 32rpx;
+  height: 32rpx;
+  margin-left: 30rpx;
+}
+
+.font28 {
+  font-size: 28rpx;
+}
+
+.color2 {
+  color: #222;
+}
+
+.font26 {
+  font-size: 26rpx;
+}
+
+.color4 {
+  color: #444;
+}
+
+.colorblue {
+  color: #0bb3cc;
+}

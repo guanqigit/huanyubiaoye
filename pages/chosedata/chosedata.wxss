@@ -1,0 +1,123 @@
+ page {
+  background-color: #f5f7fa;
+}
+.tab{
+  font-size: 30rpx;
+  color: #222;
+  padding: 25rpx 0;
+}
+.tab-ac{
+  color: #0bb3cc;
+}
+.header {
+  background: #fff;
+  padding: 0 30rpx 0 70rpx;
+  border-bottom: 1px solid #cfcfcf;
+}
+.tbaline{
+  width: 86rpx;
+  height: 4rpx;
+  background: transparent;
+}
+.tbaline-ac{
+  background: #0bb3cc;
+}
+.addicon {
+  width: 38rpx;
+  height: 38rpx;
+}
+.container{
+  padding: 30rpx;
+}
+.insetshop{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 25rpx;
+  }
+.list-item {
+  background-color: white;
+  padding:20rpx 30rpx 20rpx 15rpx;
+  margin-bottom: 20rpx;
+  border-radius: 4px;
+}
+.middlebox{
+  border-right: 1px solid #f0f0f0;
+}
+.list-content {
+  color: #a5a5a5;
+  font-size: 34rpx;
+  line-height: 50rpx;
+}
+
+.list-bottom {
+  padding-top: 15rpx;
+}
+
+.icon-center {
+  margin-right: 10rpx;
+}
+
+.edit {
+  width: 37rpx;
+  height: 37rpx;
+  margin-right: 10rpx;
+}
+
+.delete {
+  width: 30rpx;
+  height: 37rpx;
+  margin-right: 10rpx;
+  margin-left: 40rpx;
+}
+
+.center {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.foot-btn {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  padding: 10rpx 0;
+}
+
+.btn-color {
+  width: 90%;
+  padding: 15rpx 0;
+  background-color: #26c8e0;
+  box-shadow: 0px 2px 7px 0px rgba(11, 179, 204, 0.38);
+  border-radius: 4px;
+  color: white;
+  font-size: 28rpx;
+  margin: 0 auto;
+}
+
+.editicon {
+  width: 32rpx;
+  height: 32rpx;
+  margin-left: 30rpx;
+}
+
+.font28 {
+  font-size: 28rpx;
+}
+
+.color2 {
+  color: #222;
+}
+
+.font26 {
+  font-size: 26rpx;
+}
+
+.color4 {
+  color: #444;
+}
+
+.colorblue {
+  color: #0bb3cc;
+}

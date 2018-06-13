@@ -1,0 +1,145 @@
+<view class='container'>
+  <view class='evaluate-commodity'>
+    <view class='insetshop-title flex flex-row flex-centers'>
+      <image class='insetshop-icom' src='/image/insetshop.png'></image>
+      <text>黑人眼镜</text>
+    </view>
+    <view class='commodity flex flex-row flex-space flex-centers'>
+      <!-- <text class='da-icon'>搭</text> -->
+      <view class='flex flex-column flex-space flex-centers'>
+        <view class='flex flex-row flex-centers'>
+          <view class='commodity-logo'>
+            <image class='commodity-logo-img' src='/image/auditionbg.png'></image>
+            <image class='new-icon' src='/image/new.jpg'></image>
+          </view>
+          <view class='flex flex-column commodity-text'>
+            <view class='flex flex-row flex-space flex-centers'>
+              <text class='commodity-name'> SUOFEIA326701CSUOFEIA326701CSUOFEIA326701CSUOFEIA326701C</text>
+              <text class='heshi-btn'>适合</text>
+            </view>
+            <text class='commodity-jieshao'>修脸神器超大镜框钛金框学生镜框</text>
+            <text class='commodity-color'>颜色：天使蓝</text>
+          </view>
+        </view>
+        <!-- <text></text> -->
+      </view>
+    </view>
+
+    <view class='commodity flex flex-row flex-space flex-centers'>
+      <!-- <text class='da-icon'>搭</text> -->
+      <view class='flex flex-column flex-space flex-centers'>
+        <view class='flex flex-row flex-centers'>
+          <view class='commodity-logo' style='height:160rpx;'>
+            <image class='commodity-logo-img' src='/image/auditionbg.png'></image>
+            <image class='new-icon' src='/image/new.jpg'></image>
+          </view>
+          <view class='flex flex-column commodity-text'>
+            <view class='flex flex-row flex-space flex-centers'>
+              <text class='commodity-name'> 纳米BRC防蓝光镜片</text> </view>
+            <text class='commodity-jieshao'>树脂非球面设计超薄电脑手机族专用近视镜片</text>
+            <text class='commodity-color' style='margin-top:25rpx;'>折射率：1.60</text>
+          </view>
+        </view>
+        <text class='commodity-bottom-text'>选用数据类型：平台验光数据（上传于2018/5/13）</text>
+      </view>
+    </view>
+
+    <view class='commodity flex flex-row flex-space flex-centers'>
+      <text class='da-icon'>搭</text>
+      <view class='flex flex-column flex-space flex-centers'>
+        <view class='flex flex-row flex-centers'>
+          <view class='commodity-logo' style='width:190rpx;height:160rpx;margin-left:0'>
+            <image class='commodity-logo-img' src='/image/auditionbg.png'></image>
+            <image class='new-icon' src='/image/new.jpg'></image>
+          </view>
+          <view class='flex flex-column commodity-text' style='width:410rpx;'>
+            <view class='flex flex-row flex-space flex-centers'>
+              <text class='commodity-name'> 纳米BRC防蓝光镜片</text> </view>
+            <text class='commodity-jieshao'>树脂非球面设计超薄电脑手机族专用近视镜片</text>
+            <text class='commodity-color' style='margin-top:25rpx;'>折射率：1.60</text>
+          </view>
+        </view>
+        <text class='commodity-bottom-text' style='padding-left:0'>选用数据类型：平台验光数据（上传于2018/5/13）</text>
+      </view>
+    </view>
+
+  </view>
+
+
+  <view class='evaluate-box flex flex-column'>
+    <view class='sale-unit-box flex flex-row flex-space flex-centers' bindtap='chosetype'>
+      <view class='flex flex-row flex-centers' wx:if="{{typecode==0}}">
+        <image class='sale-icon1' src='/image/tuihuo.png'></image>
+        <text>退货</text>
+      </view>
+      <view class='flex flex-row flex-centers' wx:if="{{typecode==1}}">
+        <image class='sale-icon2' src='/image/huanxin.png'></image>
+        <text>换新</text>
+      </view>
+      <view class='flex flex-row flex-centers' wx:if="{{typecode==2}}">
+        <image class='sale-icon3' src='/image/weixiu.png'></image>
+        <text>维修</text>
+      </view>
+      <image class='sale-right-icon' src='/image/righticon.png'></image>
+      <!-- <image class='sale-right-icon' src='/image/topicon.png'></image> -->
+      <view class='xuan-sale flex flex-column flex-space flex-centers' hidden="{{typebox}}">
+        <view class='xuansale-unit flex flex-row flex-space flex-centers' data-id="0" catchtap='typecode'>
+          <image style='margin-left:10rpx;' class='sale-icon' src='/image/tuihuo.png'></image>
+          <text>退货</text>
+          <image class='sale-gou-icon1' src="{{typecode==0?'../../image/gou.png':'../../image/nice-white.png'}}"></image>
+        </view>
+        <view class='xuansale-unit flex flex-row flex-space flex-centers' data-id="1" catchtap='typecode'>
+          <image style='margin-left:10rpx;' class='sale-icon' src='/image/huanxin.png'></image>
+          <text>换新</text>
+          <image class='sale-gou-icon2' src="{{typecode==1?'../../image/gou.png':'../../image/nice-white.png'}}"></image>
+        </view>
+        <view class='xuansale-unit flex flex-row flex-space flex-centers' data-id="2" catchtap='typecode'>
+          <image style='margin-left:10rpx;' class='sale-icon' src='/image/weixiu.png'></image>
+          <text>维修</text>
+          <image class='sale-gou-icon3' src="{{typecode==2?'../../image/gou.png':'../../image/nice-white.png'}}"></image>
+        </view>
+      </view>
+
+      <!-- <view class='xuan-sale flex flex-column flex-space flex-centers'>
+        <view class='xuansale-unit flex flex-row flex-space flex-centers'>
+        <image style='margin-left:10rpx;' class='sale-icon' src='/image/huanxin.png'></image>
+        <text>退货</text>
+        <image class='sale-gou-icon' src='/image/gou.png'></image>
+        </view>
+        <view class='xuansale-unit flex flex-row flex-space flex-centers'>
+        <image style='margin-left:10rpx;' class='sale-icon' src='/image/tuihuo.png'></image>
+        <text>换新</text>
+        <image class='sale-gou-icon' src='/image/gou.png'></image>
+        </view>
+        <view class='xuansale-unit flex flex-row flex-space flex-centers'>
+        <image style='margin-left:10rpx;' class='sale-icon' src='/image/weixiu.png'></image>
+        <text>维修</text>
+        <image class='sale-gou-icon' src='/image/gou.png'></image>
+        </view>
+      </view> -->
+
+    </view>
+    <textarea style='margin-top:30rpx' class='evaluate-liuyan' placeholder='宝贝满足你的期待吗？说说你的使用心得，分享给想的小伙伴们吧。'></textarea>
+    <view class='up-img-box' catchtap='upImg'>
+      <image src='/image/upimg-bg.png'></image>
+    </view>
+  </view>
+  <view class='shohuo-site-box flex flex-column'>
+    <view class='shouhuo-name flex flex-row flex-space flex-centers'>
+      <text>收货人：不露</text>
+      <text>17771863243</text>
+    </view>
+    <view class='flex flex-row flex-space' style='margin-top:20rpx;'>
+      <image class='site-icon' src='/image/site.png'></image>
+      <view class='site-text'>
+        <text>收货地址：湖北省武汉市汉阳区钟家村小学六年级2班1楼XXX</text>
+      </view>
+      <image class='sale-right-icon' style='position: relative;top: 6rpx;right:4rpx;' src='/image/righticon.png'></image>
+    </view>
+  </view>
+  <view class='evaluate-btn-box flex flex-column flex-centers'>
+    <view class='evaluate-btn-bottom' bindtap='afterdetail'>
+      发布
+    </view>
+  </view>
+</view>

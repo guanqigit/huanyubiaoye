@@ -1,0 +1,473 @@
+<view class="container">
+  <view class='flex flex-space nav-box flex-centers'>
+    <view class='flex'>
+      <image src='../../image/phoneicon.png' class='phone'></image>
+    </view>
+    <view class='flex flex-column flex-center flex-box' data-nav="0" bindtap='navtab'>
+      <text class="nav-item {{navtype==0?'nav-ac':''}}">镜框详情</text>
+      <text class="item-line {{navtype==0?'item-lines':''}}"></text>
+    </view>
+    <view class='flex flex-column flex-center flex-box' data-nav="1" bindtap='navtab'>
+      <text class="nav-item {{navtype==1?'nav-ac':''}}">镜片介绍</text>
+      <text class="item-line {{navtype==1?'item-lines':''}}"></text>
+    </view>
+    <view class='flex flex-column flex-center flex-box' data-nav="2" bindtap='navtab'>
+      <text class="nav-item {{navtype==2?'nav-ac':''}}">用户评论</text>
+      <text class="item-line {{navtype==2?'item-lines':''}}"></text>
+    </view>
+    <view class='flex'>
+      <image src='../../image/shoppingicon.png' class='shoppingcar'></image>
+    </view>
+  </view>
+  <view class='flex flex-column' wx:if="{{navtype==0}}">
+    <view class='flex flex-center swiperbox'>
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots class='swiper' indicator-active-color="#4ce4ff" indicator-color="#fff" circular='true'>
+        <block wx:for="{{imgUrls}}" wx:key=''>
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" />
+            <view class='videobtn flex flex-row flex-center'>
+              <text>视频</text>
+              <image src='../../image/righticon.png' class='playicon'></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class='header-info flex flex-column'>
+      <view class='flex flex-center flex-row header-title'>
+        <text>SUOFEIA-3267-C115</text>
+        <text class='header-icon'>宽出</text>
+      </view>
+      <view class='flex flex-center flex-row header-name'>
+        <text>修脸神器超大镜框钛金框防蓝光辐射眼镜架护目镜女</text>
+      </view>
+      <view class='flex flex-center flex-row header-pic'>
+        <text>￥126</text>
+      </view>
+      <view class='flex flex-space header-content'>
+        <text>好评率：88%</text>
+        <text>邮费：包邮</text>
+        <text>地址：上海</text>
+      </view>
+    </view>
+    <view class='header-infos flex flex-column'>
+      <view class='flex flex-centers flex-row jkcolor-title margin-b20'>
+        <image src='../../image/jkcolor.png' class='jkcolor'></image>
+        <text>镜框颜色</text>
+      </view>
+      <view class='flex flex-wrap border-b'>
+        <text class='jkcolor-name margin-b20 jkcolor-title'>琥珀色</text>
+        <text class='jkcolor-name margin-b20 jkcolor-title'>自然棕</text>
+        <text class='jkcolor-name margin-b20 jkcolor-title'>透明灰</text>
+        <text class='jkcolor-name margin-b20 jkcolor-title'>天使蓝</text>
+      </view>
+      <view class='flex flex-column jkcolor-box'>
+        <view class='flex flex-centers flex-row jkcolor-title margin-b20'>
+          <image src='../../image/guiginfo.png' class='guiginfoimg'></image>
+          <text>镜框颜色</text>
+        </view>
+        <view class='flex flex-column border-b'>
+          <view class='flex flex-space guiginfo'>
+            <text class='margin-b20'>眼镜规格：520□20-145</text>
+            <text class='margin-b20'>镜圈尺寸：52mm</text>
+          </view>
+          <view class='flex flex-space guiginfo'>
+            <text class='margin-b20'>眼镜规格：520□20-145</text>
+            <text class='margin-b20'>镜圈尺寸：52mm</text>
+          </view>
+          <view class='flex flex-space guiginfo'>
+            <text class='margin-b20'>眼镜规格：520□20-145</text>
+            <text class='margin-b20'>镜圈尺寸：52mm</text>
+          </view>
+        </view>
+      </view>
+      <view class='flex flex-space jkcolor-content'>
+        <view class='flex flex-row flex-centers'>
+          <image src='../../image/vouchericon.png' class='vouchericon'></image>
+          <text>领取优惠券</text>
+        </view>
+        <view class='flex flex-center'>
+          <image src='../../image/righticon.png' class='righticon'></image>
+        </view>
+      </view>
+    </view>
+    <view class='flex flex-column detailintroduction'>
+      <view class='flex flex-center margin-b20'>
+        <text>-细节图片-</text>
+      </view>
+      <view class='flex flex-column'>
+        <view class='flex flex-center margin-b15'>
+          <image src='../../image/auditionbg.png' class='detailintroductionimg'></image>
+        </view>
+        <view class='flex flex-center margin-b15'>
+          <image src='../../image/auditionbg.png' class='detailintroductionimg'></image>
+        </view>
+      </view>
+    </view>
+    <view class='flex flex-column margin-t20 lensintroduction'>
+      <view class='flex flex-space'>
+        <view class='flex flex-row flex-center'>
+          <image src='../../image/spot.png' class='lensintroductionimg'></image>
+          <text class='lensintroductiontitle'>镜片介绍</text>
+        </view>
+        <view class='flex flex-row flex-centers' bindtap='detail'>
+          <text class='lensintroductiondetail'>商铺镜片详情</text>
+          <image src='../../image/righticon.png' class='righticonlens'></image>
+        </view>
+      </view>
+      <view class='jplistbox'>
+        <scroll-view scroll-x style="width: auto;overflow:hidden;">
+          <view class='jpitem'>
+            <text class='jplist jplist-ac'>依视路</text>
+            <text class='dline dline-ac'></text>
+          </view>
+          <view class='jpitem'>
+            <text class='jplist'>依视路</text>
+            <text class='dline'></text>
+          </view>
+          <view class='jpitem'>
+            <text class='jplist'>依视路</text>
+            <text class='dline'></text>
+          </view>
+          <view class='jpitem'>
+            <text class='jplist'>依视路</text>
+            <text class='dline'></text>
+          </view>
+          <view class='jpitem'>
+            <text class='jplist'>依视路</text>
+            <text class='dline'></text>
+          </view>
+          <view class='jpitem'>
+            <text class='jplist'>依视路</text>
+            <text class='dline'></text>
+          </view>
+          <view class='jpitem'>
+            <text class='jplist'>依视路</text>
+            <text class='dline'></text>
+          </view>
+          <view class='jpitem'>
+            <text class='jplist'>依视路</text>
+            <text class='dline'></text>
+          </view>
+          <view class='jpitem'>
+            <text class='jplist'>依视路</text>
+            <text class='dline'></text>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+    <view class='flex flex-center flex-column jpdetailbox'>
+      <view class='flex flex-column jpdetailinsetbox'>
+        <image src='../../image/auditionbg.png' class='jpdetailinsetimg'></image>
+        <view class='flex flex-space jpdetaillist'>
+          <text>商品名称</text>
+          <text class='jpdetailname'>纳米BRC防蓝光镜片</text>
+        </view>
+        <view class='flex flex-column jpdetaillist'>
+          <view class='flex margin-b15'>
+            <text>商品名称</text>
+          </view>
+          <view class='flex flex-wrap'>
+            <text class='jpdetailitem'>纳米</text>
+            <text class='jpdetailitem'>BRC</text>
+            <text class='jpdetailitem'>防蓝光</text>
+            <text class='jpdetailitem'>镜片</text>
+          </view>
+        </view>
+        <view class='flex flex-space jpdetaillist'>
+          <text>商品价格</text>
+          <text><text class='jpdetailpic'>2298</text>元</text>
+        </view>
+        <view class='flex flex-space jpdetaillists'>
+          <text>制作周期</text>
+          <text class='jpdetailname'>1天</text>
+        </view>
+        <view class='flex flex-space jpdetaillistl'>
+          <text></text>
+          <view class='flex flex-row flex-center'>
+            <text class='seedetail'>查看详情</text>
+            <image src='../../image/solidright.png' class='solidright'></image>
+          </view>
+        </view>
+      </view>
+      <view class='flex flex-center flex-row seemore'>
+        <image src='../../image/longline.png' class='longline'></image>
+        <text>展开浏览更多</text>
+        <image src='../../image/drop-down.png' class='drop-down'></image>
+        <image src='../../image/longline.png' class='longline'></image>
+      </view>
+    </view>
+    <view class='flex flex-column margin-t20 lensintroduction'>
+      <view class='flex flex-space'>
+        <view class='flex flex-row flex-center'>
+          <image src='../../image/spot.png' class='lensintroductionimg'></image>
+          <text class='lensintroductiontitle'>用户评论</text>
+        </view>
+        <view class='flex flex-row flex-centers'>
+          <text class='lensintroductiondetail'>全部评论</text>
+          <image src='../../image/righticon.png' class='righticonlens'></image>
+        </view>
+      </view>
+      <view class='flex flex-space flex-centers margin-t40 margin-b30'>
+        <view class='flex flex-row flex-centers'>
+          <image src='../../image/sunglasses.png' class='userheader'></image>
+          <text class='username'>宝宝一枚</text>
+          <text class='commenttype'>好评</text>
+        </view>
+        <view class='flex time'>
+          <text>2018-01-01</text>
+        </view>
+      </view>
+      <view class='flex commentcontent'>
+        <text>镜框：透明灰  镜片：防蓝光镜片</text>
+      </view>
+      <view class='flex font26 color4 margin-t40 margin-b30'>
+        <text>当大家看到我的这一篇评论的时候，表示我对产品是认可的，尽管我此刻的评论是复制粘贴的。这一方面是为了肯定商家的服务，另一方面是为了节约自己的时间。</text>
+      </view>
+      <view class='flex flex-row'>
+        <image src='../../image/auditionbg.png' class='commentimg' style="margin:0 {{index==1?'15rpx':''}}"></image>
+      </view>
+      <view class='flex flex-end flex-row flex-centers margin-t20'>
+        <view class='flex flex-row flex-centers margin-r40'>
+          <image src='../../image/thumbs-up.png' class='thumbs-up'></image>
+          <text>30</text>
+        </view>
+        <view class='flex flex-row flex-centers'>
+          <image src='../../image/comment.png' class='commenticon'></image>
+          <text>30</text>
+        </view>
+      </view>
+      <view class='flex flex-center margin-t60'>
+        <text class='allcomment'>查看全部评论</text>
+      </view>
+      <view class='flex flex-center flex-row seemore margin-t60'>
+        <image src='../../image/longline.png' class='longline'></image>
+        <text>已经到底啦~</text>
+        <image src='../../image/longline.png' class='longline'></image>
+      </view>
+    </view>
+    <view class='flex flex-row navigationbar'>
+      <view class='flex flex-space flex-box'>
+        <view class='flex flex-center flex-box flex-column'>
+          <image src='../../image/tryd.png' class='navigationbarimg'></image>
+          <text>试戴</text>
+        </view>
+        <view class='flex flex-center flex-box flex-column'>
+          <image src='../../image/collection.png' class='navigationbarimg1'></image>
+          <text>收藏</text>
+        </view>
+        <view class='flex flex-center flex-box flex-column'>
+          <image src='../../image/insetshop.png' class='navigationbarimg2'></image>
+          <text>试戴</text>
+        </view>
+      </view>
+      <view class='flex flex-center navigationbarbtn1'>
+        <text>加入购镜单</text>
+      </view>
+      <view class='flex flex-center navigationbarbtn1 navigationbarbtn2'>
+        <text>搭配镜片</text>
+      </view>
+    </view>
+  </view>
+  <view class='flex flex-column' wx:if="{{navtype==1}}">
+    <view class='flex flex-center swiperbox'>
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots class='swiper' indicator-active-color="#4ce4ff" indicator-color="#fff" circular='true'>
+        <block wx:for="{{imgUrls}}" wx:key=''>
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class='flex flex-column detailcontent'>
+      <text class='flex flex-center'>依视路</text>
+      <text class='detailtxt'>依视路起源于1849年法国巴黎，迄今已有160多年
+        的历史依视路专注于眼用光学领域，镜片完全融合人
+        类视觉和光学科技，是世界视光行业的领导者。在全
+        球56个国家有50700名员工，460个车房，销售网
+        络遍布全球115个国家。
+      </text>
+    </view>
+    <view class='flex flex-column margin-t20 lensintroductions'>
+      <!-- <view class='flex flex-space'>
+        <view class='flex flex-row flex-center'>
+          <image src='../../image/spot.png' class='lensintroductionimg'></image>
+          <text class='lensintroductiontitle'>镜片介绍</text>
+        </view>
+        <view class='flex flex-row flex-centers'>
+          <text class='lensintroductiondetail'>商铺镜片详情</text>
+          <image src='../../image/righticon.png' class='righticonlens'></image>
+        </view>
+      </view> -->
+      <view class='jplistbox'>
+        <scroll-view scroll-x style="width: auto;overflow:hidden;">
+          <view class='jpitem'>
+            <text class='jplist jplist-ac'>依视路</text>
+            <text class='dline dline-ac'></text>
+          </view>
+          <view class='jpitem'>
+            <text class='jplist'>依视路</text>
+            <text class='dline'></text>
+          </view>
+          <view class='jpitem'>
+            <text class='jplist'>依视路</text>
+            <text class='dline'></text>
+          </view>
+          <view class='jpitem'>
+            <text class='jplist'>依视路</text>
+            <text class='dline'></text>
+          </view>
+          <view class='jpitem'>
+            <text class='jplist'>依视路</text>
+            <text class='dline'></text>
+          </view>
+          <view class='jpitem'>
+            <text class='jplist'>依视路</text>
+            <text class='dline'></text>
+          </view>
+          <view class='jpitem'>
+            <text class='jplist'>依视路</text>
+            <text class='dline'></text>
+          </view>
+          <view class='jpitem'>
+            <text class='jplist'>依视路</text>
+            <text class='dline'></text>
+          </view>
+          <view class='jpitem'>
+            <text class='jplist'>依视路</text>
+            <text class='dline'></text>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+    <view class='flex flex-center flex-column jpdetailbox'>
+      <view class='flex flex-column jpdetailinsetbox'>
+        <image src='../../image/auditionbg.png' class='jpdetailinsetimg'></image>
+        <view class='flex flex-space jpdetaillist'>
+          <text>商品名称</text>
+          <text class='jpdetailname'>纳米BRC防蓝光镜片</text>
+        </view>
+        <view class='flex flex-column jpdetaillist'>
+          <view class='flex margin-b15'>
+            <text>商品名称</text>
+          </view>
+          <view class='flex flex-wrap'>
+            <text class='jpdetailitem'>纳米</text>
+            <text class='jpdetailitem'>BRC</text>
+            <text class='jpdetailitem'>防蓝光</text>
+            <text class='jpdetailitem'>镜片</text>
+          </view>
+        </view>
+        <view class='flex flex-space jpdetaillist'>
+          <text>商品价格</text>
+          <text><text class='jpdetailpic'>2298</text>元</text>
+        </view>
+        <view class='flex flex-space jpdetaillists'>
+          <text>制作周期</text>
+          <text class='jpdetailname'>1天</text>
+        </view>
+        <view class='flex flex-space jpdetaillistl'>
+          <text></text>
+          <view class='flex flex-row flex-center'>
+            <text class='seedetail'>查看详情</text>
+            <image src='../../image/solidright.png' class='solidright'></image>
+          </view>
+        </view>
+      </view>
+      <view class='flex flex-center flex-row seemore'>
+        <image src='../../image/longline.png' class='longline'></image>
+        <text>展开浏览更多</text>
+        <image src='../../image/drop-down.png' class='drop-down'></image>
+        <image src='../../image/longline.png' class='longline'></image>
+      </view>
+    </view>
+    <view class='flex flex-row navigationbar'>
+      <view class='flex flex-space flex-box'>
+        <!-- <view class='flex flex-center flex-box flex-column'>
+          <image src='../../image/tryd.png' class='navigationbarimg'></image>
+          <text>试戴</text>
+        </view> -->
+        <view class='flex flex-center flex-box flex-column'>
+          <image src='../../image/collection.png' class='navigationbarimg1'></image>
+          <text>收藏</text>
+        </view>
+        <view class='flex flex-center flex-box flex-column'>
+          <image src='../../image/insetshop.png' class='navigationbarimg2'></image>
+          <text>试戴</text>
+        </view>
+      </view>
+      <view class='flex flex-center navigationbarbtn1'>
+        <text>加入购镜单</text>
+      </view>
+      <view class='flex flex-center navigationbarbtn1 navigationbarbtn2'>
+        <text>搭配镜片</text>
+      </view>
+    </view>
+  </view>
+  <view class='flex flex-column' wx:if="{{navtype==2}}">
+    <view class='flex flex-wrap commentsortbox'>
+      <text class='commentsortitem'>全部</text>
+    </view>
+    <view class='flex flex-column margin-t20 lensintroduction'>
+      <view class='flex flex-space flex-centers margin-b30'>
+        <view class='flex flex-row flex-centers'>
+          <image src='../../image/sunglasses.png' class='userheader'></image>
+          <text class='username'>宝宝一枚</text>
+          <text class='commenttype'>好评</text>
+        </view>
+        <view class='flex time'>
+          <text>2018-01-01</text>
+        </view>
+      </view>
+      <view class='flex commentcontent'>
+        <text>镜框：透明灰  镜片：防蓝光镜片</text>
+      </view>
+      <view class='flex font26 color4 margin-t40 margin-b30'>
+        <text>当大家看到我的这一篇评论的时候，表示我对产品是认可的，尽管我此刻的评论是复制粘贴的。这一方面是为了肯定商家的服务，另一方面是为了节约自己的时间。</text>
+      </view>
+      <view class='flex flex-row'>
+        <image src='../../image/auditionbg.png' class='commentimg' style="margin:0 {{index==1?'15rpx':''}}"></image>
+      </view>
+      <view class='flex flex-end flex-row flex-centers margin-t20'>
+        <view class='flex flex-row flex-centers margin-r40'>
+          <image src='../../image/thumbs-up.png' class='thumbs-up'></image>
+          <text>30</text>
+        </view>
+        <view class='flex flex-row flex-centers' bindtap='commentdetail'>
+          <image src='../../image/comment.png' class='commenticon'></image>
+          <text>30</text>
+        </view>
+      </view>
+      <view class='flex flex-center margin-t60'>
+        <text class='allcomment'>查看全部评论</text>
+      </view>
+      <view class='flex flex-center flex-row seemore margin-t60'>
+        <image src='../../image/longline.png' class='longline'></image>
+        <text>已经到底啦~</text>
+        <image src='../../image/longline.png' class='longline'></image>
+      </view>
+    </view>
+    <view class='flex flex-row navigationbar'>
+      <view class='flex flex-space flex-box'>
+        <!-- <view class='flex flex-center flex-box flex-column'>
+          <image src='../../image/tryd.png' class='navigationbarimg'></image>
+          <text>试戴</text>
+        </view> -->
+        <view class='flex flex-center flex-box flex-column'>
+          <image src='../../image/collection.png' class='navigationbarimg1'></image>
+          <text>收藏</text>
+        </view>
+        <view class='flex flex-center flex-box flex-column'>
+          <image src='../../image/insetshop.png' class='navigationbarimg2'></image>
+          <text>试戴</text>
+        </view>
+      </view>
+      <view class='flex flex-center navigationbarbtn1'>
+        <text>加入购镜单</text>
+      </view>
+      <view class='flex flex-center navigationbarbtn1 navigationbarbtn2'>
+        <text>搭配镜片</text>
+      </view>
+    </view>
+  </view>
+</view>

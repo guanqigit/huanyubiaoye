@@ -1,0 +1,187 @@
+<view class='container'>
+  <view class='member-top flex  flex-row  flex-center'>
+    <image class='member-bg' src='/image/huiyanbg1.png'></image>
+    <image class='member-tx' src='/image/toux.png'></image>
+    <view class='member-name-text'>
+      <view catchtap='goMessage'>
+        <text class='member-name'>不露</text>
+        <image wx:if='{{iSlogin}}' class='right-icon' style='width:12rpx;height:22rpx;' src='/image/rightall.png'></image>
+      </view>
+      <view wx:if="{{iSlogin}}" class='flex-column'>
+        <image class='zhuanshi' src='/image/zhuanshi.png'></image>
+        <text class='member-grade'>大眼</text>
+        <text class='nenber-jinyu'>初来乍到，小眼眯眯</text>
+      </view>
+      <view wx:if="{{!iSlogin}}" class='not-zhuce'>未注册</view>
+    </view>
+    <view class='huiyuan-btn'>
+      <view wx:if="{{iSlogin}}" catchtap='goLingqu' class='member-qiandao'>
+        <text>签到</text>
+        <image class='right-icon' src='/image/rightall.png'></image>
+      </view>
+      <!-- <view wx:if="{{iSlogin}}" class='member-quanyi'>
+        <text>会员权益</text>
+        <image class='right-icon' src='/image/rightall.png'></image>
+      </view> -->
+    </view>
+    <image class='xiaoxi' src='/image/lingd.png' bindtap='message'></image>
+  </view>
+  <view wx:if="{{!iSlogin}}" catchtap='goZhuce' class='not-zhuce-btn'>
+    <text class='not-zhuce-btn-text'>点此注册会员，玩转更多优惠</text>
+    <image class='not-zhuce-icon' src='/image/rightall.png'></image>
+    <image class='member-btn-bg' src='/image/not-zhuce-bg.png'></image>
+  </view>
+  <view class='member-my-order'>
+    <view class='member-order-title flex flex-row flex-space'>
+      <text class='member-order-title-text'><text class='member-order-title-text-icon'></text>我的订单</text>
+      <view class='look-order-moer'>
+        查看更多订单
+        <image class='look-order-icon' src='/image/righticon.png'></image>
+      </view>
+    </view>
+    <view class='member-order-nav flex flex-space '>
+      <view class='member-order-unit flex flex-column'>
+        <image class='member-order-icon' src='/image/daifukuan.png'></image>
+        <text>待付款</text>
+      </view>
+      <view class='member-order-unit flex flex-column'>
+        <image class='member-order-icon' src='/image/daifahuo.png'></image>
+        <text>待发货</text>
+      </view>
+      <view class='member-order-unit flex flex-column'>
+        <image class='member-order-icon' src='/image/daishouhuo.png'></image>
+        <text>待收货</text>
+      </view>
+      <view class='member-order-unit flex flex-column'>
+        <image class='member-order-icon' src='/image/daipingjia.png'></image>
+        <text>待评价</text>
+      </view>
+      <view class='member-order-unit flex flex-column' bindtap='afterale'>
+        <image class='member-order-icon' src='/image/daishohuo.png'></image>
+        <text>售后</text>
+      </view>
+    </view>
+  </view>
+  <view class='member-list'>
+    <view class='member-list-nav flex flex-row flex-space'>
+      <view class='member-list-nav-nuit flex flex-column'>
+        <image class='member-list-nav-nuit-icon' src='/image/shouchang.png'></image>
+        <text>我的收藏</text>
+      </view>
+      <view class='member-list-nav-nuit flex flex-column'>
+        <image class='member-list-nav-nuit-icon' src='/image/zuji.png'></image>
+        <text>我的足迹</text>
+      </view>
+      <view class='member-list-nav-nuit flex flex-column'>
+        <image class='member-list-nav-nuit-icon' src='/image/shuju.png'></image>
+        <text>我的数据</text>
+      </view>
+      <view class='member-list-nav-nuit flex flex-column'>
+        <image class='member-list-nav-nuit-icon' style='width:44rpx;' src='/image/yuyue.png'></image>
+        <text>我的预约</text>
+      </view>
+    </view>
+    <view class='member-list-mian flex flex-column'>
+      <view wx:if='{{iSlogin}}' class='member-list-unit flex flex-row flex-space'>
+        <view>
+          <image style='width:30rpx;height:36rpx;' class='member-list-unit-icon' src='/image/hongbao.png'></image>
+          <text class='member-list-unit-name'>红包</text>
+        </view>
+        <view>
+          <text>600可用</text>
+          <image class='look-order-icon' src='/image/righticon.png'></image>
+        </view>
+      </view>
+      <view wx:if='{{iSlogin}}' class='member-list-unit flex flex-row flex-space'>
+        <view>
+          <image style='width:37rpx;height:36rpx;' class='member-list-unit-icon' src='/image/biaojin.png'></image>
+          <text class='member-list-unit-name'>标金</text>
+        </view>
+        <view>
+          <text>2500可用</text>
+          <image class='look-order-icon' src='/image/righticon.png'></image>
+        </view>
+      </view>
+      <view class='member-list-unit flex flex-row flex-space' bindtap='coupon'>
+        <view>
+          <image style='width:36rpx;height:32rpx;' class='member-list-unit-icon' src='/image/youhuijiun.png'></image>
+          <text class='member-list-unit-name'>优惠券</text>
+        </view>
+        <view>
+          <text>3张可用</text>
+          <image class='look-order-icon' src='/image/righticon.png'></image>
+        </view>
+      </view>
+      <view class='member-list-unit flex flex-row flex-space'>
+        <view>
+          <image style='width:36rpx;height:32rpx;' class='member-list-unit-icon' src='/image/biaoshika.png'></image>
+          <text class='member-list-unit-name'>标适卡</text>
+        </view>
+        <view>
+          <text>3张可用</text>
+          <image class='look-order-icon' src='/image/righticon.png'></image>
+        </view>
+      </view>
+      <view class='member-list-unit flex flex-row flex-space'>
+        <view>
+          <image style='width:36rpx;height:36rpx;' class='member-list-unit-icon' src='/image/tousu.png'></image>
+          <text class='member-list-unit-name'>投诉与建议</text>
+        </view>
+        <view>
+          <text></text>
+          <image class='look-order-icon' src='/image/righticon.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:if='{{goZhuce}}' class='pop-zhuce'>
+    <view class='zhuce-mian'>
+      <view class='zhuce-shuru-nuit flex flex-row flex-space'>
+        <view class='flex flex-row'>
+          <image class='zhuce-dianhua-icon' src='/image/dianhuahaoma.png'></image>
+          <input class='shuru-box' type='tel' placeholder='请输入手机号'></input>
+        </view>
+        <text class='huoqu-btn'>获取验证码</text>
+      </view>
+      <view class='zhuce-shuru-nuit flex flex-row flex-space'>
+        <view class='flex flex-row'>
+          <image style='width:37rpx;height:39rpx;' class='zhuce-dianhua-icon' src='/image/yanzhengma.png'></image>
+          <input class='shuru-box' type='tel' placeholder='请输验证码'></input>
+        </view>
+      </view>
+      <view class='zhuce-btn'>
+        立即注册
+      </view>
+      <text class='zhuce-xieyi'>点击立即注册即代表你已同意<text class='zhuce-xieyia'>注册协议</text></text>
+      <image catchtap='claerPop' class='claer-btn' src='/image/claer.png'></image>
+    </view>
+  </view>
+  <view wx:if='{{iSlingqu}}' class='qindao-pop'>
+    <view class='qiandao-mian'>
+      <image class='qiandao-bg' src='/image/qiandaobg.png'></image>
+      <view class='qindao-top-text'>连续3次签到，可额外获得15标适度</view>
+      <view class='qiandao-time flex flex-row flex-space'>
+        <view class='qiandao-one-day flex flex-column'>
+          <text>3.3</text>
+          <icon class='iSsuccess-icon' type="success" size="30" />
+        </view>
+        <view class='qiandao-one-day flex flex-column'>
+          <text>3.4</text>
+          <icon class='iSsuccess-icon' type="success" size="30" />
+          <!-- <view  class='not-qiandao-icon iSsuccess-icon'></view>         -->
+        </view>
+        <view class='qiandao-one-day flex flex-column'>
+          <text>3.5</text>
+          <!-- <icon class='iSsuccess-icon'  type="success" size="30"/> -->
+          <view class='not-qiandao-icon iSsuccess-icon'></view>
+        </view>
+
+        <view class='qinadao-line'></view>
+      </view>
+      <view class='qindao-top-text' style='color:#444;margin-top:30rpx;'>已连续签到2天</view>
+      <view class='qiandao-btn '>今日已签到</view>
+      <!-- class 未领取 yet-qiandao-btn -->
+      <image catchtap='claerPop' class='claer-btn' src='/image/claer.png'></image>
+    </view>
+  </view>
+</view>

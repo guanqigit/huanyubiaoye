@@ -1,0 +1,123 @@
+<view class="container">
+  <view class='flex flex-center swiperbox'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots class='swiper' indicator-active-color="#4ce4ff" indicator-color="#fff" circular='true'>
+      <block wx:for="{{imgUrls}}" wx:key=''>
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='flex flex-column line-box'>
+    <view class='flex flex-row line title'>
+      <view class='flex flex-center'>
+        <image src='../../image/spot.png' class='spot'></image>
+      </view>
+      <view class='flex'>
+        <text>尺寸数据标定</text>
+      </view>
+      <view class='flex flex-row flex-center recommend'>
+        <text>推荐指数：</text>
+        <image src='../../image/stars.png' class='starsimg'></image>
+        <image src='../../image/stars.png' class='starsimg'></image>
+        <image src='../../image/stars.png' class='starsimg'></image>
+        <image src='../../image/stars.png' class='starsimg'></image>
+        <image src='../../image/stars.png' class='starsimg'></image>
+      </view>
+    </view>
+    <view class='flex line info'>
+      <text>系统将直观显示商城中每款镜框与您脸宽的尺寸匹配情况</text>
+    </view>
+    <view class='flex flex-space line'>
+      <view class='flex flex-column'>
+        <view class='flex flex-row line'>
+          <view class='flex'>
+            <radio data-programme="1" checked="{{checked1}}" class='radio' bindtap='checked' />
+          </view>
+          <view class='flex flex-wrap name'>
+            <text>方案一：镜框尺寸标定<text class='grey'>(适合已佩戴眼镜的用户)</text></text>
+          </view>
+        </view>
+        <view class='flex lines'>
+          <text>注意测量时保持直尺与镜框相互平行 </text>
+        </view>
+        <view class='flex flex-space flex-centers'>
+          <view class='flex footer'>
+            <text>镜框外宽：</text>
+          </view>
+          <view class="phone_one" bindtap="{{first1code==true?'clickPerson':''}}">
+            <view class="phone_personal" style="background:{{first1code==true?'':'#ebebeb'}}">{{firstPerson}}</view>
+            <image src="../../image/drop-down.png" class="personal_image {{selectArea ? 'rotateRight' :''}}"></image>
+          </view>
+          <view class="person_box">
+            <view class="phone_select" hidden="{{selectPerson}}">
+              <view class="select_one" bindtap="mySelect" data-me="136 mm">136 mm</view>
+              <view class="select_one" bindtap="mySelect" data-me="138 mm">138 mm</view>
+              <view class="select_one" bindtap="mySelect" data-me="140 mm">140 mm</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='flex flex-center'>
+        <image src='../../image/framesize.png' class='framesizeimg'></image>
+      </view>
+    </view>
+    <view class='flex flex-space line' style='margin-top:10rpx;'>
+      <view class='flex flex-column'>
+        <view class='flex flex-row line'>
+          <view class='flex'>
+            <radio data-programme="2" checked="{{checked2}}" class='radio' bindtap='checked' />
+          </view>
+          <view class='flex flex-wrap name'>
+            <text>方案二：脸部尺寸标定<text class='grey'>(适合未佩戴眼镜的用户)</text></text>
+          </view>
+        </view>
+        <view class='flex lines'>
+          <text>注意测量时保持直尺与双眼相互平行</text>
+        </view>
+        <view class='flex flex-space flex-centers'>
+          <view class='flex footer'>
+            <text>脸部外宽：</text>
+          </view>
+          <view class="phone_one" bindtap="{{first2code==true?'clickPerson1':''}}">
+            <view class="phone_personal"  style="background:{{first2code==true?'':'#ebebeb'}}">{{firstPerson1}}</view>
+            <image src="../../image/drop-down.png" class="personal_image {{selectArea1 ? 'rotateRight' :''}}"></image>
+          </view>
+          <view class="person_box">
+            <view class="phone_select" hidden="{{selectPerson1}}">
+              <view class="select_one" bindtap="mySelect1" data-me="136 mm">136 mm</view>
+              <view class="select_one" bindtap="mySelect1" data-me="138 mm">138 mm</view>
+              <view class="select_one" bindtap="mySelect1" data-me="140 mm">140 mm</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='flex flex-center'>
+        <image src='../../image/facesize.png' class='framesizeimg'></image>
+      </view>
+    </view>
+  </view>
+  <view class='flex flex-column line-box'>
+    <view class='flex flex-row line title'>
+      <view class='flex flex-center'>
+        <image src='../../image/spot.png' class='spot'></image>
+      </view>
+      <view class='flex'>
+        <text>验光数据标定</text>
+      </view>
+      <view class='flex flex-row flex-center recommend'>
+        <text>推荐指数：</text>
+        <image src='../../image/stars.png' class='starsimg'></image>
+        <image src='../../image/stars.png' class='starsimg'></image>
+        <image src='../../image/stars.png' class='starsimg'></image>
+        <image src='../../image/stars.png' class='starsimg'></image>
+        <image src='../../image/stars.png' class='starsimg'></image>
+      </view>
+    </view>
+    <view class='flex flex-space flex-centers line info'>
+      <text>系统将智能推荐适合您的镜片及折射率</text>
+      <text class='infobox' bindtap='creatdata'>创建验光数据</text>
+    </view>
+  </view>
+  <view class='flex flex-center submit'>提交数据</view>
+</view>

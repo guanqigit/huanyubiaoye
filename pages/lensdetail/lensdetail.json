@@ -1,0 +1,6 @@
+{
+    "navigationBarBackgroundColor": "#08a8c0",
+    "navigationBarTitleText": "镜片详情",
+    "enablePullDownRefresh": false,
+    "navigationBarTextStyle": "white"
+}

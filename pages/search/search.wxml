@@ -1,0 +1,62 @@
+<view class="container">
+  <view class='flex flex-column header'>
+    <view class='flex flex-row row'>
+      <view class='flex flex-row flex-centers flex-box' style='background:#f5f7fa;padding:2rpx 0;'>
+        <view class='flex swiperbox' bindtap='searchbtn'>
+          <swiper vertical='true' class='swiper' current="{{current}}">
+            <block wx:for="{{searchnav}}" wx:key=''>
+              <swiper-item>
+                <text>{{item.txt}}</text>
+              </swiper-item>
+            </block>
+          </swiper>
+          <image src='../../image/topbtn.png' class='searchbtn'></image>
+          <image src='../../image/bottombtn.png' class='searchbtn bottombtn'></image>
+        </view>
+        <view class='flex flex-row flex-box flex-centers'>
+          <image src='../../image/search.png' class="search"></image>
+          <input type='txt' class='searchinput flex flex-box' placeholder='{{placeholder}}' bindconfirm="searchlist"></input>
+        </view>
+      </view>
+      <view class='flex flex-center serachsub' bindtap='searchlist'>搜索</view>
+    </view>
+    <view class='flex title row20'>
+      <text>历史搜索</text>
+    </view>
+    <view class='flex flex-wrap'>
+      <text class='searchlist' wx:for="{{srarchlist}}" wx:key=''>{{item}}</text>
+    </view>
+  </view>
+  <view class='flex flex-row flex-centers txtdescribe'>
+    <image src='../../image/spot.png' class='spot'></image>
+    <text>都在浏览</text>
+  </view>
+  <view class='flex flex-wrap listbox'>
+    <view class='flex flex-column list-item' wx:for="{{producFrametList}}" wx:key="">
+      <image src='../../image/new.jpg' class='newicon' wx:if="{{item.isNew==1}}"></image>
+      <view class='flex flex-center'>
+        <image class='list-img' src='{{item.icon}}'></image>
+      </view>
+      <view class='flex line-padding'>
+        <text class='describecontent' style='width:80%'>{{item.name}}</text>
+      </view>
+      <view class='flex line-padding'>
+        <text class='describecontent' style='font-size:22rpx;color:#444;'>{{item.name}}</text>
+      </view>
+      <view class='flex line-padding'>
+        <image src='../../image/vouchericon.png' class='vouchericon' wx:if="{{item.isCoupons==1}}"></image>
+      </view>
+      <view class='flex flex-space line-padding'>
+        <view class='flex flex-row flex-end-align'>
+          <text style='font-size:30rpx;color:#0bb3cc'>￥{{item.minPrice}}</text>
+        </view>
+        <view class='flex flex-centers'>
+          <text style='font-size:20rpx;color:#444'>{{item.praiseRate}}%好评</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='flex gotop' wx:if="{{scrollTop>500}}">
+    <image src='../../image/gotop.png' class='gotopimg'></image>
+  </view>
+</view>

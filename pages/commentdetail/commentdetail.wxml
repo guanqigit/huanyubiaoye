@@ -1,0 +1,119 @@
+<view class="container">
+  <view class='flex flex-column margin-t20 lensintroduction'>
+    <view class='flex flex-space flex-centers margin-b30'>
+      <view class='flex flex-row flex-centers'>
+        <image src='../../image/sunglasses.png' class='userheader'></image>
+        <text class='username'>宝宝一枚</text>
+        <text class='commenttype'>好评</text>
+      </view>
+      <view class='flex time'>
+        <text>2018-01-01</text>
+      </view>
+    </view>
+    <view class='flex commentcontent'>
+      <text>镜框：透明灰  镜片：防蓝光镜片</text>
+    </view>
+    <view class='flex font26 color4 margin-t40 margin-b30'>
+      <text>当大家看到我的这一篇评论的时候，表示我对产品是认可的，尽管我此刻的评论是复制粘贴的。这一方面是为了肯定商家的服务，另一方面是为了节约自己的时间。</text>
+    </view>
+    <view class='flex flex-row'>
+      <image src='../../image/auditionbg.png' class='commentimg' style="margin:0 {{index==1?'15rpx':''}}"></image>
+    </view>
+    <view class='flex flex-column comment-grade margin-t30'>
+      <view class='flex flex-row flex-centers'>
+        <text style='margin-right:30rpx;'>产品品质</text>
+        <image src='../../image/stars.png' class='stars'></image>
+        <image src='../../image/stars.png' class='stars'></image>
+        <image src='../../image/stars.png' class='stars'></image>
+        <image src='../../image/stars.png' class='stars'></image>
+        <image src='../../image/stars.png' class='stars'></image>
+        <text>非常好</text>
+      </view>
+      <view class='flex flex-row flex-centers margin-t40'>
+        <text style='margin-right:10rpx;'>发货承诺</text>
+        <image src='../../image/commentgrey.png' class='commentgrey'></image>
+        <text class='commentgreytxt'>无故拖延</text>
+        <image src='../../image/commentgrey.png' class='commentgrey'></image>
+        <text class='commentgreytxt'>稍有延期</text>
+        <image src='../../image/commentac.png' class='commentgrey'></image>
+        <text>信守承诺</text>
+      </view>
+    </view>
+    <view class='flex flex-end flex-row flex-centers margin-t20'>
+      <view class='flex flex-row flex-centers margin-r40'>
+        <image src='../../image/thumbs-up.png' class='thumbs-up'></image>
+        <text>30</text>
+      </view>
+      <view class='flex flex-row flex-centers'>
+        <image src='../../image/comment.png' class='commenticon'></image>
+        <text>30</text>
+      </view>
+    </view>
+  </view>
+  <view class='flex flex-column lensintroductions'>
+    <view class='flex flex-row flex-center lenspadding'>
+      <image src='../../image/spot.png' class='lensintroductionimg'></image>
+      <text class='lensintroductiontitle'>全部评论</text>
+    </view>
+    <view class='flex flex-column commentlist'>
+      <view class='flex flex-space commentitem'>
+        <view class='flex flex-row flex-centers'>
+          <view class='flex flex-center'>
+            <image src='../../image/routineicon.png' class='userimg'></image>
+          </view>
+          <view class='flex flex-column'>
+            <text class='usertitle'>一脸懵逼</text>
+            <text>请问重要吗</text>
+          </view>
+        </view>
+        <view class='flex'>
+          <text class='commenttime'>1小时前</text>
+        </view>
+      </view>
+      <view class='flex flex-space commentitem'>
+        <view class='flex flex-row flex-centers'>
+          <view class='flex flex-center'>
+            <image src='../../image/routineicon.png' class='userimg'></image>
+          </view>
+          <view class='flex flex-column'>
+            <text class='usertitle'>一脸懵逼</text>
+            <text>请问重要吗</text>
+          </view>
+        </view>
+        <view class='flex'>
+          <text class='commenttime'>1小时前</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='flex flex-center margin-t60'>
+    <text class='allcomment'>查看全部评论</text>
+  </view>
+  <view class='flex flex-center flex-row seemore margin-t60'>
+    <image src='../../image/longline.png' class='longline'></image>
+    <text>已经到底啦~</text>
+    <image src='../../image/longline.png' class='longline'></image>
+  </view>
+  <view class='flex flex-row navigationbar'>
+    <view class='flex flex-space flex-box'>
+      <!-- <view class='flex flex-center flex-box flex-column'>
+          <image src='../../image/tryd.png' class='navigationbarimg'></image>
+          <text>试戴</text>
+        </view> -->
+      <view class='flex flex-center flex-box flex-column'>
+        <image src='../../image/collection.png' class='navigationbarimg1'></image>
+        <text>收藏</text>
+      </view>
+      <view class='flex flex-center flex-box flex-column'>
+        <image src='../../image/insetshop.png' class='navigationbarimg2'></image>
+        <text>试戴</text>
+      </view>
+    </view>
+    <view class='flex flex-center navigationbarbtn1'>
+      <text>加入购镜单</text>
+    </view>
+    <view class='flex flex-center navigationbarbtn1 navigationbarbtn2'>
+      <text>搭配镜片</text>
+    </view>
+  </view>
+</view>

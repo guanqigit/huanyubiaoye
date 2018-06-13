@@ -1,0 +1,146 @@
+.container, page {
+  background-color: #f5f7fa;
+  font-family: "微软雅黑";
+  height: 100%;
+}
+.container{
+padding: 30rpx;
+}
+.list-item {
+  background-color: white;
+  padding: 0 15rpx;
+}
+
+.item-content {
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #fafafa;
+}
+
+.item-input {
+  width: 100%;
+  padding-left: 60rpx;
+  line-height: 20rpx;
+  font-size: 28rpx;
+  color: #888;
+}
+.item-name{
+  font-size: 28rpx;
+  color: #222;
+}
+.item-inputname {
+  width: 100%;
+  padding-left: 93rpx;
+  line-height: 20rpx;
+}
+
+textarea {
+  width: 100%;
+}
+
+.list-items {
+  background-color: white;
+  padding: 20rpx 15rpx;
+}
+
+.radio {
+  transform: scale(0.8)
+}
+
+.list-btn {
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+.right-icon{
+  width:30rpx;
+  height:16rpx;
+
+}
+
+.btn-bc {
+  width: 100%;
+  margin:40rpx auto 0;
+  background-color: #26c8e0;
+  color: white;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.pla-css {
+  font-family: "微软雅黑";
+  color: #888;
+  font-size: 28rpx;
+}
+
+.set-default {
+  margin-top: 2%;
+}
+
+/*修改botton*/
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  color: #fff;
+  background-color: #26c8e0;
+}
+button::after{
+  border: none;
+}
+/*省市区start*/
+
+.citypickers {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  background-color: red;
+}
+
+.citybody {
+  position: fixed;
+  bottom: 0px;
+  background:#fff;
+}
+
+.cityheader {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 4;
+  /*margin-top: 110rpx;*/
+}
+
+.city-cancel {
+  float: left;
+  margin: 20rpx;
+  color: #818181;
+}
+
+.city-true {
+  float: right;
+  margin: 20rpx;
+  color: #2fb42e;
+}
+
+.section .picker {
+  background-color: #fff;
+  border-bottom: 1px #d9d9d9 solid;
+  border-top: 1px #d9d9d9 solid;
+  padding: 20rpx;
+}
+
+/*省市区end*/

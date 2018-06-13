@@ -1,0 +1,127 @@
+<view class="container">
+  <view class='flex flex-column'>
+    <view class='flex flex-center swiperbox'>
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots class='swiper' indicator-active-color="#4ce4ff" indicator-color="#fff" circular='true'>
+        <block wx:for="{{imgUrls}}" wx:key=''>
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" />
+            <view class='videobtn flex flex-row flex-center'>
+              <text>视频</text>
+              <image src='../../image/righticon.png' class='playicon'></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class='header-info flex flex-column'>
+      <view class='flex flex-center flex-row header-title'>
+        <text>SUOFEIA-3267-C115</text>
+        <text class='header-icon'>宽出</text>
+      </view>
+      <view class='flex flex-center flex-row header-name'>
+        <text>修脸神器超大镜框钛金框防蓝光辐射眼镜架护目镜女</text>
+      </view>
+      <view class='flex flex-center flex-row header-pic'>
+        <text>￥126</text>
+      </view>
+      <view class='flex flex-space header-content'>
+        <text>好评率：88%</text>
+        <text>邮费：包邮</text>
+        <text>地址：上海</text>
+      </view>
+    </view>
+    <view class='header-infos flex flex-column'>
+      <view class='flex flex-space jkcolor-content'>
+        <view class='flex flex-row flex-centers'>
+          <image src='../../image/vouchericon.png' class='vouchericon'></image>
+          <text>领取优惠券</text>
+        </view>
+        <view class='flex flex-center'>
+          <image src='../../image/righticon.png' class='righticon'></image>
+        </view>
+      </view>
+      <view class='flex flex-space jkcolor-contents'>
+        <view class='flex flex-row flex-centers'>
+          <image src='../../image/optometrydata.png' class='optometrydata'></image>
+          <text>领取优惠券</text>
+        </view>
+        <view class='flex flex-centers flex-row'>
+          <text class='optometrydatatxt'>平台验光数据</text>
+          <image src='../../image/righticon.png' class='righticon'></image>
+        </view>
+      </view>
+      <view class='flex flex-space jkcolor-content'>
+        <view class='flex flex-row flex-centers'>
+          <image src='../../image/makecycle.png' class='makecycle'></image>
+          <text>领取优惠券</text>
+        </view>
+        <view class='flex flex-center'>
+          <text class='optometrydatatxts'>1天</text>
+        </view>
+      </view>
+      <view class='flex flex-column jkcolor-box'>
+        <view class='flex flex-centers flex-row jkcolor-title margin-b20'>
+          <image src='../../image/guiginfo.png' class='guiginfoimg'></image>
+          <text>规格信息</text>
+        </view>
+        <view class='flex flex-column border-b'>
+          <view class='flex flex-space guiginfo'>
+            <text class='margin-b20'>眼镜规格：520□20-145</text>
+            <text class='margin-b20'>镜圈尺寸：52mm</text>
+          </view>
+          <view class='flex flex-space guiginfo'>
+            <text class='margin-b20'>眼镜规格：520□20-145</text>
+            <text class='margin-b20'>镜圈尺寸：52mm</text>
+          </view>
+          <view class='flex flex-space guiginfo'>
+            <text class='margin-b20'>眼镜规格：520□20-145</text>
+            <text class='margin-b20'>镜圈尺寸：52mm</text>
+          </view>
+        </view>
+      </view>
+      <view class='flex flex-space jkcolor-contents'>
+        <view class='flex flex-row flex-centers'>
+          <image src='../../image/refractive.png' class='refractive'></image>
+          <text>折射率</text>
+        </view>
+      </view>
+      <view class='flex flex-wrap'>
+        <text class='jkcolor-name margin-b20 jkcolor-title'>琥珀色</text>
+        <text class='jkcolor-name margin-b20 jkcolor-title'>自然棕</text>
+        <text class='jkcolor-name margin-b20 jkcolor-title'>透明灰</text>
+        <text class='jkcolor-name margin-b20 jkcolor-title'>天使蓝</text>
+      </view>
+    </view>
+    <view class='flex flex-column detailintroduction'>
+      <view class='flex flex-center margin-b20'>
+        <text>-细节图片-</text>
+      </view>
+      <view class='flex flex-column'>
+        <view class='flex flex-center margin-b15'>
+          <image src='../../image/auditionbg.png' class='detailintroductionimg'></image>
+        </view>
+        <view class='flex flex-center margin-b15'>
+          <image src='../../image/auditionbg.png' class='detailintroductionimg'></image>
+        </view>
+      </view>
+    </view>
+    <view class='flex flex-row navigationbar'>
+      <view class='flex flex-space flex-box'>
+        <view class='flex flex-center flex-box flex-column'>
+          <image src='../../image/collection.png' class='navigationbarimg1'></image>
+          <text>收藏</text>
+        </view>
+        <view class='flex flex-center flex-box flex-column'>
+          <image src='../../image/insetshop.png' class='navigationbarimg2'></image>
+          <text>试戴</text>
+        </view>
+      </view>
+      <view class='flex flex-center navigationbarbtn1'>
+        <text>加入购镜单</text>
+      </view>
+      <view class='flex flex-center navigationbarbtn1 navigationbarbtn2'>
+        <text>组合购买</text>
+      </view>
+    </view>
+  </view>
+</view>

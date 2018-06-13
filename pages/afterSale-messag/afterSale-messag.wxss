@@ -1,0 +1,105 @@
+.sale-msg-top{
+  width: 100%;
+  height: 270rpx;
+	background-image: linear-gradient(0deg, 
+		#43c5d9 0%, 
+		#81d2eb 100%);
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.wancheng-icon{
+  width: 58rpx;
+  height: 58rpx;
+  margin: 17rpx 0;
+  position: relative;
+  z-index: 2
+}
+.liucheng-unit{
+  width: 130rpx;
+  color: #fff;
+  position: relative;
+  margin: 0 60rpx;
+}
+.liucheng-time{
+  font-size: 20rpx;
+}
+.liucheng-title{
+  font-size:24rpx;
+}
+.liuchengyuan{
+  width: 50rpx;
+  height: 50rpx;
+  border: 2rpx solid #fff;
+  border-radius: 50%;
+  margin: 17rpx 0;
+  position: relative;
+  z-index: 2
+}
+.liucheng-line{
+  height: 3rpx;
+  width: 150rpx;
+  position: absolute;
+  top: 78rpx;
+  left: 112rpx;
+  background-color: #fff;
+}
+.liucheng-msg-unit{
+  width: 690rpx;
+  margin-left: 30rpx;
+  background-color: #ffffff;
+	box-shadow: 0px 5rpx 18rpx 0px 
+		rgba(186, 186, 186, 0.38);
+	border-radius: 4rpx;
+  padding: 30rpx 0;
+  margin-top: 30rpx;
+}
+.liucheng-text{
+  width: 674rpx;
+  margin-left: 16rpx;
+  border-bottom: 2rpx solid #f0f0f0;
+  padding-bottom: 30rpx;
+  margin-bottom: 20rpx;
+}
+.liucheng-dian-icon{
+  width: 8rpx;
+  height: 8rpx;
+  background-color: #0bb3cc;
+  border-radius: 50%;
+  margin-right: 8rpx;
+}
+.liucheng-text-title{
+  color: #222222;
+  font-size: 30rpx;
+}
+.liucheng-text-red{
+  color: #d42502;
+  font-size: 20rpx;
+  border-left: 2rpx solid #d42502;
+  margin-left: 8rpx;
+
+  padding-left: 6rpx;
+}
+.liucheng-text-text{
+  width: 646rpx;
+  color: #444444;
+  font-size: 26rpx;
+  line-height: 34rpx;
+  letter-spacing: 2rpx;
+  margin-top: 30rpx;
+}
+.wenti-img{
+  width: 210rpx;
+  height: 210rpx;
+}
+.wenti-img-show{
+ width: 646rpx;
+ margin-top: 10rpx; 
+}
+.liucheng-text-list{
+  margin-top: 20rpx;
+  	color: #444444;
+    font-size:26rpx; 
+}
+.liucheng-text-list>text{
+  margin: 10rpx 0;
+}

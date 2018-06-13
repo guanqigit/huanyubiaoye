@@ -1,0 +1,93 @@
+page{
+  background-color: rgb(245, 247, 250)
+}
+.message-nav{
+  width: 100%;
+  background-color: #fff;
+  height: 90rpx;
+  border-bottom: 1rpx solid #cfcfcf;
+  	color: #222222;
+    font-size: 28rpx;
+}
+.message-nav>view{
+  width: 50%;
+  text-align: center
+}
+.message-nav>view>view{
+  position: relative;
+}
+.nav-active-line{
+  width: 25%;
+  height: 4rpx;
+  background-color: #0bb3cc;
+  position: absolute;bottom: -24rpx;
+  left: 37.5%;
+}
+.message-active{
+  color:  #0bb3cc;
+}
+.xitong-message{
+  width: 690rpx;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+.message-time{
+  text-align: center;
+  	color: #444444;
+    font-size: 24rpx;
+}
+.message-unit{
+  background-color: #fff;
+  padding: 18rpx 0;
+  margin-top: 16rpx;
+  border-radius: 4rpx;
+}
+.message-title{
+  width: 650rpx;
+  margin-left: 20rpx;
+}
+.notReady-dian{
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 50%;
+  background-color:#d42502;
+  margin-right: 8rpx;
+}
+.message-logo{
+  width: 110rpx;
+  height: 110rpx;
+}
+.message-body{
+  width: 650rpx;
+  margin-left: 20rpx;
+  margin-top: 16rpx;
+}
+.message-text{
+  margin-left: 20rpx;
+  color: #444444;
+  font-size:26rpx;
+}
+.dianpu-message{
+    width: 690rpx;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+.dianpu-message-logo{
+  width: 190rpx;
+  height: 190rpx;
+}
+.dianpu-message-text{
+  	color: #444444;
+    
+    margin-top: 24rpx;
+    display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 3;
+overflow: hidden;
+}
+.dianpu-message-body{
+    width: 520rpx;
+    margin-left: 16rpx;
+    	color: #222222;
+      font-size: 26rpx;
+}

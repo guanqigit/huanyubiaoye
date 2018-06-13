@@ -1,0 +1,211 @@
+<view class="container">
+  <view wx:if="{{datas!=[]}}" class="flex container-header flex-column flex-space" bindtap="updateAddress">
+    <view class='flex flex-row flex-centers'>
+      <view class="flex flex-center">
+        <image class="header-address" src="../../image/adderssicon.png"></image>
+      </view>
+      <view class='flex flex-column flex-box'>
+        <view class="flex flex-space font28 color2">
+          <view class="flex fontw">
+            <text>收货人：</text>
+            <text>{{datas.name}}</text>
+          </view>
+          <view class="flex">
+            <text>{{datas.phone}}</text>
+          </view>
+        </view>
+        <view class="flex flex-row header-title flex-space">
+          <view class="flex flex-wrap font22 color4">
+            <text>{{datas.address}}</text>
+          </view>
+          <view class="flex">
+            <image class="header-right" src="../../image/righticon.png "></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view bindtap="addaddress" wx:else="" class="flex container-header flex-row flex-space">
+    <view class="flex">
+      <view>
+        <image class="header-more" src="../../image/more.png"></image>
+      </view>
+      <text>添加收货人信息</text>
+    </view>
+    <view class="flex header-right-center">
+      <image class=" header-right" src="../../image/right.png "></image>
+    </view>
+    <view class="header-top-line">
+      <image class="line-size" src="../../image/line.png"></image>
+    </view>
+  </view>
+  <view class='flex flex-column '>
+    <view class='flex flex-column listbox marginb20'>
+      <view class='flex flex-space flex-centers'>
+        <view class='flex flex-row flex-centers'>
+          <image src='../../image/insetshop.png' class='insetshop'></image>
+          <text class='font30 color4'>黑人眼镜</text>
+          <image src='../../image/righticon.png' class='righticon'></image>
+        </view>
+      </view>
+      <view class='flex flex-column listitem'>
+        <view class='flex flex-space flex-centers borderb paddingb20'>
+          <view class='flex flex-row rowline'>
+            <image src='../../image/glasses.png' class='listimg'></image>
+            <image src='../../image/glasses.png' class='listimg'></image>
+            <image src='../../image/glasses.png' class='listimg'></image>
+          </view>
+          <view class='flex flex-center flex-row'>
+            <text class='font22 color8'>共2件</text>
+            <image src='../../image/righticon.png' class='righticon'></image>
+          </view>
+        </view>
+        <view class='flex flex-space flex-centers borderb paddingt20 paddingb20'>
+          <view class='flex flex-row flex-centers'>
+            <image src='../../image/time.png' class='timeicon'></image>
+            <text class='font26 color4'>收货时间</text>
+          </view>
+          <view class='flex flex-row flex-centers'>
+            <text class='font24 color8'>仅工作日可收货</text>
+            <image src='../../image/righticon.png' class='righticon'></image>
+          </view>
+        </view>
+        <view class='paddingt20'>
+          <text class='font28 color8'>点此给商户留言</text>
+        </view>
+      </view>
+    </view>
+    <view class='flex flex-column listbox marginb20'>
+      <view class='flex flex-space flex-centers'>
+        <view class='flex flex-row flex-centers'>
+          <image src='../../image/insetshop.png' class='insetshop'></image>
+          <text class='font30 color4'>黑人眼镜</text>
+          <image src='../../image/righticon.png' class='righticon'></image>
+        </view>
+      </view>
+      <view class='flex flex-column listitem'>
+        <view class='flex flex-space flex-centers'>
+          <view class='flex flex-center'>
+            <image src='../../image/glasses.png' class='listimgs'></image>
+          </view>
+          <view class='flex flex-column' style='overflow:hidden'>
+            <view class='flex flex-space'>
+              <text class='text-hiddle'>SUOFEIA-326701-CLMNLK</text>
+              <text class='font20 colorblue borderblue'>适合</text>
+            </view>
+            <view class='flex'>
+              <text class='font22 color6'>修脸神器超大镜框钛金框学生镜框</text>
+            </view>
+            <view class='flex flex-row flex-end-align paddingt20 marginb30'>
+              <text class='font30 colorblue'>￥100</text>
+              <text class='font22 color8'>￥100</text>
+            </view>
+            <view class='flex'>
+              <text class='font24 color2'>颜色：天使蓝</text>
+            </view>
+          </view>
+        </view>
+        <view class='flex paddingb30 paddingt20 borderb flex-row flex-centers'>
+          <text class='font20 colorred borderred'>店铺满减</text>
+          <text class='font20 color6 marginl10'>商品金额已满100元，立减10元</text>
+        </view>
+        <view class='flex flex-space flex-centers borderb paddingt20 paddingb20'>
+          <view class='flex flex-row flex-centers'>
+            <image src='../../image/time.png' class='timeicon'></image>
+            <text class='font26 color4'>收货时间</text>
+          </view>
+          <view class='flex flex-row flex-centers'>
+            <text class='font24 color8'>仅工作日可收货</text>
+            <image src='../../image/righticon.png' class='righticon'></image>
+          </view>
+        </view>
+        <view class='paddingt20'>
+          <text class='font28 color8'>点此给商户留言</text>
+        </view>
+      </view>
+    </view>
+    <view class='flex flex-column listboxs marginb20'>
+      <view class='flex flex-space listline borderb'>
+        <view class='flex'>
+          <text class='font28 color2'>优惠券</text>
+        </view>
+        <view class='flex flex-row flex-centers'>
+          <text class='font24 color8'>2张可用</text>
+          <image src='../../image/righticon.png' class='righticon'></image>
+        </view>
+      </view>
+      <view class='flex flex-space listline borderb'>
+        <view class='flex'>
+          <text class='font28 color2'>优惠券</text>
+        </view>
+        <view class='flex flex-row flex-centers'>
+          <text class='font24 color8'>2张可用</text>
+          <image src='../../image/righticon.png' class='righticon'></image>
+        </view>
+      </view>
+      <view class='flex flex-space listline borderb'>
+        <view class='flex'>
+          <text class='font28 color2'>标适币</text>
+        </view>
+        <view class='flex flex-row flex-centers'>
+          <text class='font24 color8'>已用2500，抵扣25元</text>
+          <image src='../../image/righticon.png' class='righticon'></image>
+        </view>
+      </view>
+      <view class='flex flex-space listline borderb'>
+        <view class='flex'>
+          <text class='font28 color2'>红包</text>
+        </view>
+        <view class='flex flex-row flex-centers'>
+          <text class='font24 color8'>已用15元</text>
+          <image src='../../image/righticon.png' class='righticon'></image>
+        </view>
+      </view>
+      <view class='flex flex-space listline '>
+        <view class='flex'>
+          <text class='font28 color2'>发票</text>
+        </view>
+        <view class='flex flex-row flex-centers'>
+          <image src='../../image/righticon.png' class='righticon'></image>
+        </view>
+      </view>
+    </view>
+    <view class='flex flex-column listboxs marginb20'>
+      <view class='flex flex-space listline borderb'>
+        <view class='flex'>
+          <text class='font28 color2'>商品金额</text>
+        </view>
+        <view class='flex'>
+          <text class='font28 colorblue'>￥850.00</text>
+        </view>
+      </view>
+      <view class='flex flex-space listline borderb'>
+        <view class='flex'>
+          <text class='font28 color2'>优惠</text>
+        </view>
+        <view class='flex flex-row flex-centers'>
+          <text class='font28 colorblue'>￥850.00</text>
+        </view>
+      </view>
+      <view class='flex flex-space listline borderb'>
+        <view class='flex flex-row flex-centers'>
+        <text class='font28 color2'>运费</text>
+          <image src='../../image/greyinfo.png' class='grreyinfo'></image>
+        </view>
+        <view class='flex'>
+          <text class='font28 colorblue'>+￥6.00</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='flex flex-end settlementbox flex-centers'>
+  <view class='flex flex-row flex-centers'>
+    <text class='font26 color6'>实付款：</text>
+    <text class='font22 colorblue '>￥</text>
+    <text class='font32 colorblue marginr20'>500 </text>
+  </view>
+  <view class='flex flex-center settlementbtn' bindtap='gopay'>
+    <text class='font30 colorf'>结算</text>
+  </view>
+</view>

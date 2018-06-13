@@ -1,0 +1,128 @@
+page{
+  background-color: rgb(245, 247, 250)
+}
+.stie-unit{
+  width: 690rpx;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  padding: 30rpx 0;
+  
+}
+.site-icon{
+  width: 27rpx;
+  height: 34rpx;
+}
+.stie-text-mian{
+  width: 674rpx;
+  margin-left: 16rpx;
+  border-bottom: 2rpx solid #f0f0f0;
+  padding-bottom: 16rpx;
+}
+.site-text{
+  width: 630rpx;
+  box-sizing: border-box;
+  padding-right: 12rpx;
+  	color: #222222;
+    font-size: 28rpx;
+}
+.shouhuo-site{
+  	color: #444444;
+    font-size: 26rpx;
+    margin-top: 18rpx;
+}
+.site-operate-mian{
+  width: 674rpx;
+  margin-left: 16rpx;
+  margin-top: 20rpx
+}
+.radio-icon{
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 16rpx;
+}
+.site-bianji{
+  width: 32rpx;
+  height: 32rpx;
+}
+.site-shanchu{
+  width: 30rpx;
+  height:33rpx;
+  margin-right: 16rpx;
+  margin-left: 60rpx;
+}
+.not-radio-icon{
+  width: 29rpx;
+	height: 29rpx;
+	border: solid 2rpx #d2d4d6;
+  border-radius: 50%;
+  margin-right: 16rpx;
+}
+.site-add-btn{
+  	width: 690rpx;
+	height: 64rpx;
+	background-color: #26c8e0;
+	box-shadow: 0px 2rpx 7rpx 0px 
+		rgba(11, 179, 204, 0.38);
+	border-radius: 4rpx;
+  text-align: center;
+  line-height: 64rpx;
+  color: #fff;
+  font-size: 28rpx;
+  position: fixed;
+  bottom: 30rpx;
+  left: 30rpx;
+}
+.xugao{
+  width: 100%;
+  height: 100rpx;
+}
+.site-pop{
+  position: fixed;top: 0;
+  right: 0;
+  bottom:0;left: 0;
+  background-color: rgba(0,0,0,0.3)
+}
+.site-opo-mian{
+  width: 690rpx;
+	background-color: #ffffff;
+	border-radius: 4rpx;
+  padding-top: 120rpx;
+  margin-left: 30rpx;
+  margin-top: 120rpx;
+  position: relative;
+}
+.del-hint{
+  width: 100%;
+  text-align: center;
+  color: #222222;
+  font-size:30rpx;
+}
+.del-hint1{
+  	color: #222222;
+    font-size: 26rpx;
+    text-align: center;
+    margin-top: 80rpx;
+}
+.btn-box{
+  border-top: 2rpx solid #f0f0f0;
+  margin-top: 50rpx;
+  line-height: 68rpx;
+  text-align: center;
+  color: #666666;
+}
+.btn-box view{
+  width: 50%;
+  box-sizing: border-box;
+}
+.del-btn{
+  color: #0bb3cc;
+  border-left: 2rpx solid #f0f0f0;
+}
+.claer-btn{
+  width: 24rpx;
+  height: 24rpx;
+  position: absolute;
+  top: 30rpx;
+  right: 16rpx;
+}

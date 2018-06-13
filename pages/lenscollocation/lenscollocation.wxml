@@ -1,0 +1,143 @@
+<view class="container">
+  <view class='flex flex-column paddingb80'>
+    <view class='flex flex-column header'>
+      <view class='flex flex-column listbox marginb20'>
+        <view class='flex flex-column marginb20'>
+          <view class='flex flex-row flex-centers'>
+            <image src='../../image/insetshop.png' class='insetshopicon'></image>
+            <text class='color4'>黑人眼镜</text>
+          </view>
+        </view>
+        <view class='flex flex-space'>
+          <view class='flex flex-center relative'>
+            <image src='../../image/glasses.png' class='liatimgmax'></image>
+            <image src='../../image/new.jpg' class='newicon'></image>
+          </view>
+          <view class='flex flex-column flex-box'>
+            <view class='flex flex-row flex-centers'>
+              <text class='text-hiddle font26 color2' style='width:70%'>SUOFEIA-326701-CSFDASFSUOFEIA-326701-CSFDASF</text>
+              <text class='font20 colorblue blueborder '>适合</text>
+              <image src='../../image/edit.png' class='editicon'></image>
+            </view>
+            <view>
+              <text class='font22 color6'>修脸神器超大镜框钛金框学生镜框</text>
+            </view>
+            <view class='flex flex-row flex-end-align'>
+              <text class='font30 colorblue'>￥100</text>
+              <text class='font22 color8' style='margin-left:10rpx;'>￥120</text>
+            </view>
+            <view>
+              <text class='font24 color2'>颜色：天使蓝</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='flex flex-column listbox marginb20'>
+        <view class='flex flex-column marginb20'>
+          <view class='flex flex-row flex-centers'>
+            <text class='color2 font26'>请选择以下镜片来进行镜框搭配：</text>
+          </view>
+        </view>
+        <view class='flex flex-column'>
+          <view class='flex flex-column border-bf0 paddingb20'>
+            <view class='flex flex-space paddingt20'>
+              <view class='flex flex-center flex-row relative'>
+                <radio-group class="radio-group " bindchange="listchecked">
+                  <label class="radio flex flex-center ">
+                    <radio value="全选" color='#0bb3cc' checked="{{listchecked}}" />
+                  </label>
+                </radio-group>
+                <image src='../../image/glasses.png' class='liatimgmin'></image>
+                <image src='../../image/new.jpg' class='newiconsmall'></image>
+              </view>
+              <view class='flex flex-column flex-box'>
+                <view class='flex flex-row flex-centers'>
+                  <text class='text-hiddle font26 color2' style='width:70%'>SUOFEIA-326701-CSFDASF</text>
+                  <text class='font20 colorblue blueborder '>可用</text>
+                  <image src='../../image/edit.png' class='editicon'></image>
+                </view>
+                <view class='flex'>
+                  <text class='font30 colorblue'>￥100</text>
+                </view>
+                <view class='flex'>
+                  <text class='font22 color4'>品牌:修脸生镜框</text>
+                </view>
+                <view class='margin-t20'>
+                  <text class='font24 color2'>折射率：1.60</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class='flex flex-column border-bf0 paddingb20'>
+          <view class='flex flex-space  paddingt20 '>
+            <view class='flex flex-center relative'>
+              <image src='../../image/glasses.png' class='liatimgmax'></image>
+              <image src='../../image/new.jpg' class='newicon'></image>
+            </view>
+            <view class='flex flex-column flex-box'>
+              <view class='flex flex-row flex-centers'>
+                <text class='text-hiddle font26 color2' style='width:70%'>SUOFEIA-326701-CSFDASFSUOFEIA-326701-CSFDASF</text>
+                <text class='font20 colorblue blueborder '>适合</text>
+                <image src='../../image/edit.png' class='editicon'></image>
+              </view>
+              <view>
+                <text class='font22 color6'>修脸神器超大镜框钛金框学生镜框</text>
+              </view>
+              <view class='flex flex-row flex-end-align'>
+                <text class='font30 colorblue'>￥100</text>
+                <text class='font22 color8' style='margin-left:10rpx;'>￥120</text>
+              </view>
+              <view>
+                <text class='font24 color2'>颜色：天使蓝</text>
+              </view>
+            </view>
+          </view>
+          <view class='flex'>
+            <text class='font22 color8'>已选数据类型：自定验光数据</text>
+          </view>
+        </view>
+        <view class='flex flex-column '>
+          <view class='flex flex-space  paddingt20 '>
+            <view class='flex flex-center relative'>
+              <image src='../../image/glasses.png' class='liatimgmax'></image>
+              <image src='../../image/new.jpg' class='newicon'></image>
+            </view>
+            <view class='flex flex-column flex-box'>
+              <view class='flex flex-row flex-centers'>
+                <text class='text-hiddle font26 color2' style='width:70%'>SUOFEIA-326701-CSFDASFSUOFEIA-326701-CSFDASF</text>
+                <text class='font20 colorblue blueborder '>适合</text>
+                <image src='../../image/edit.png' class='editicon'></image>
+              </view>
+              <view>
+                <text class='font22 color6'>修脸神器超大镜框钛金框学生镜框</text>
+              </view>
+              <view class='flex flex-row flex-end-align'>
+                <text class='font30 colorblue'>￥100</text>
+                <text class='font22 color8' style='margin-left:10rpx;'>￥120</text>
+              </view>
+              <view>
+                <text class='font24 color2'>颜色：天使蓝</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='flex flex-center flex-row flex-center font22'>
+        <text class='color8'>当前仅支持在同一店铺内组合商品哦  </text>
+        <text class='colorblue marginl20'> 查看更多店铺商品</text>
+        <image src='../../image/blueright.png' class='blueright'></image>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='flex flex-end settlementbox flex-centers'>
+  <view class='flex flex-row flex-centers'>
+    <text class='font26 color6'>合计：</text>
+    <text class='font32 colorblu marginr20'>￥500 </text>
+    <text class='font22 color6' style='margin-right:20rpx'> 已优惠50元</text>
+  </view>
+  <view class='flex flex-center settlementbtn' bindtap='topay'>
+    <text class='font30 colorf'>结算</text>
+  </view>
+</view>

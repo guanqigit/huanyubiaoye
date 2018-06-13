@@ -1,0 +1,156 @@
+<view class='container'>
+  <view class='member-message-mian'>
+    <view class='member-message-t '>
+      <view class='member-message-row flex flex-row flex-space'>
+        <text class='member-message-row-name'>头像</text>
+        <view class='flex flex-row flex-space flex-center' catchtap='goChoosTx'>
+          <image class='member-message-tx' src='{{txSrc}}'></image>
+          <image class='member-message-jt' src='/image/righticon.png'></image>
+        </view>
+      </view>
+      <view class='member-message-row flex flex-row flex-space'>
+        <text class='member-message-row-name'>昵称</text>
+        <view catchtap='goAmend' class='flex flex-row flex-space flex-centers flex-box flex-end'>
+          <text>{{userName}}</text>
+          <image class='member-message-jt' src='/image/righticon.png'></image>
+        </view>
+      </view>
+      <view class='member-message-row flex flex-row flex-space'>
+        <text class='member-message-row-name'>性别</text>
+        <view catchtap='chosSex' class='flex flex-row flex-space flex-centers flex-box flex-end'>
+          <text>{{userSex}}</text>
+          <image class='member-message-jt' src='/image/righticon.png'></image>
+        </view>
+      </view>
+    </view>
+    <view class='member-message-t '>
+      <view class='member-message-row flex flex-row flex-space'>
+        <text class='member-message-row-name'>生日</text>
+        <view class='flex flex-row flex-space flex-center'>
+          <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+            <text class='picker'>{{date}}</text>
+            <image class='member-message-jt' src='/image/righticon.png'></image>
+          </picker>
+        </view>
+      </view>
+      <view class='member-message-row flex flex-row flex-space'>
+        <text class='member-message-row-name'>手机号</text>
+        <view catchtap='goPhone' class='flex flex-row flex-space flex-center'>
+          <text>177****3243</text>
+          <image class='member-message-jt' src='/image/righticon.png'></image>
+        </view>
+      </view>
+      <view class='member-message-row flex flex-row flex-space'>
+        <text class='member-message-row-name'>地区</text>
+        <view class='flex flex-row flex-space flex-center'>
+          <picker bindchange="cityChange" mode="region" value='{{city}}'>
+            <text>{{city}}</text>
+            <image class='member-message-jt' src='/image/righticon.png'></image>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class='member-message-t ' style='border-bottom:none'>
+      <view class='member-message-row flex flex-row flex-space'>
+        <text class='member-message-row-name'>风格</text>
+        <view catchtap='changeStyle' class='flex flex-row flex-space flex-centers flex-box flex-end'>
+          <text>{{chosestylelist[stylecode].name}}</text>
+          <image class='member-message-jt' src='/image/righticon.png'></image>
+        </view>
+      </view>
+      <view class='member-message-row flex flex-row flex-space'>
+        <text class='member-message-row-name'>地址管理</text>
+        <view catchtap='goSite' class='flex flex-row flex-space flex-centers flex-box flex-end'>
+          <text></text>
+          <image class='member-message-jt' src='/image/righticon.png'></image>
+        </view>
+      </view>
+      <view class='member-message-row flex flex-row flex-space'>
+        <text class='member-message-row-name'>发票管理</text>
+        <view catchtap='goInvoice' class='flex flex-row flex-space flex-centers flex-box flex-end'>
+          <text></text>
+          <image class='' class='member-message-jt' src='/image/righticon.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:if='{{iSamend}}' class='pop-amend-name'>
+    <view class='amend-name-mian'>
+      <view class='amend-name-box flex flex-row flex-space flex-center'>
+        <text>昵称</text>
+        <input bindinput='inputName' class='amend-name-input' type='text' placeholder='请输入修改昵称'></input>
+      </view>
+      <view catchtap='amendFinish' class='amend-name'>
+        确认
+      </view>
+      <image catchtap='claerPop' class='claer-btn' src='/image/claer.png'> </image>
+    </view>
+  </view>
+  <view wx:if='{{chosSex}}' class='pop-amend-sex'>
+    <view class='pop-amend-sex-mian'>
+      <view catchtap='chosWoman' class='sex-nuit flex flex-row flex-space flex-centers'>
+        <text>女</text>
+        <image wx:if='{{iSman}}' class='sex-gou' src='/image/gou.png'></image>
+      </view>
+      <view catchtap='chosman' class='sex-nuit flex flex-row flex-space flex-centers'>
+        <text>男</text>
+        <image wx:if='{{!iSman}}' class='sex-gou' src='/image/gou.png'></image>
+      </view>
+    </view>
+  </view>
+
+  <view wx:if='{{chosStyle}}' class='pop-amend-sex'>
+    <view class='pop-amend-sex-mian'>
+      <view catchtap='chosestyle' data-id="{{index}}" wx:for="{{chosestylelist}}" class='sex-nuit flex flex-row flex-space flex-centers'>
+        <text>{{item.name}}</text>
+        <image class='sex-gou' src='/image/gou.png' wx:if="{{item.isdeft==1}}"></image>
+      </view>
+    </view>
+  </view>
+
+  <view wx:if='{{iSphone}}' class='pop-phone'>
+    <view class='pop-phone-mian'>
+      <view class=' phone-unit flex flex-row flex-space flex-centers'>
+        <image class='dianhua-icon' src='/image/dianhuahaoma.png'></image>
+        <input placeholder='请输入手机号'></input>
+        <text class='huoquyzm-btn'>获取验证码</text>
+      </view>
+      <view class=' phone-unit flex flex-row  flex-centers'>
+        <image class='yaoshi-icon' src='/image/yanzhengma.png'></image>
+        <input class='yanzhengma' placeholder='请输验证码'></input>
+      </view>
+      <view class='phone-btn'>
+        确认
+      </view>
+      <image catchtap='claerPop' class='claer-btn' src='/image/claer.png'> </image>
+    </view>
+  </view>
+  <view wx:if="{{iSinvoice}}" class='pop-invoice'>
+    <view class='invoice-mian'>
+      <view class=' invoice-nuit flex flex-row flex-space flex-centers '>
+        <text>发票类型</text>
+        <text class='invoice-text'>增值税普通发票</text>
+      </view>
+      <view class=' invoice-nuit flex flex-row flex-space flex-centers '>
+        <text>开具类型</text>
+        <text class='invoice-text'>企业</text>
+      </view>
+      <view class=' invoice-nuit flex flex-row flex-space flex-centers '>
+        <text>发票抬头</text>
+        <text class='invoice-text'>天津环宇标业科技有限公司天津环宇标业科技有限公司</text>
+      </view>
+      <view class=' invoice-nuit flex flex-row flex-space flex-centers '>
+        <text>发票类型</text>
+        <text class='invoice-text'>增值税普通发票</text>
+      </view>
+      <view class=' invoice-nuit flex flex-row flex-space flex-centers '>
+        <text>公司税号</text>
+        <text class='invoice-text'>91120116MA05MPT399</text>
+      </view>
+      <view class='invoice-btn'>
+      确认
+      </view>
+      <image catchtap='claerPop' class='claer-btn' src='/image/claer.png'> </image>
+    </view>
+  </view>
+</view>

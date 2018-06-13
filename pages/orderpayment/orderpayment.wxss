@@ -1,0 +1,149 @@
+page {
+  background: #f5f7fa;
+}
+
+.container {
+  padding: 30rpx 25rpx;
+}
+
+.content {
+  position: relative;
+}
+
+.header {
+  padding: 30rpx 0;
+}
+
+.orderpaybg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 708rpx;
+  z-index: -1;
+}
+
+.paytype {
+  padding: 30rpx;
+}
+
+.paytypelist {
+  padding: 30rpx 0 10rpx;
+}
+
+.radioicon {
+  transform: scale(0.8);
+}
+
+.wechaticon {
+  width: 44rpx;
+  height: 40rpx;
+  margin-right: 40rpx;
+}
+
+.unionpayicon {
+  width: 57rpx;
+  height: 32rpx;
+  margin-right: 31rpx;
+}
+
+.friendsicon {
+  width: 50rpx;
+  height: 41rpx;
+  margin-right: 40rpx;
+}
+
+.spot {
+  width: 8rpx;
+  height: 8rpx;
+  margin-right: 10rpx;
+}
+
+.alipayicon {
+  width: 48rpx;
+  height: 38rpx;
+  margin-right: 40rpx;
+}
+
+.font26 {
+  font-size: 26rpx;
+}
+
+.font24 {
+  font-size: 24rpx;
+}
+
+.font28 {
+  font-size: 28rpx;
+}
+
+.font30 {
+  font-size: 30rpx;
+}
+
+.font70 {
+  font-size: 50rpx;
+}
+
+.color2 {
+  color: #222;
+}
+
+.color4 {
+  color: #444;
+}
+
+.color6 {
+  color: #666;
+}
+
+.colorbliue {
+  color: #0bb3cc;
+}
+
+.model {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(000, 000, 000, 0.5);
+}
+
+.model-box {
+  background-color: #fff;
+  border-radius: 4px;
+  width: 90%;
+  margin-top: -300rpx;
+}
+
+.model-header {
+  padding: 100rpx 30rpx 20rpx 30rpx;
+  font-family: 'PingFang-SC-Bold';
+  position: relative;
+}
+
+.margint80 {
+  margin-top: 80rpx;
+}
+
+.model-bottom {
+  border-top: 1px solid #f0f0f0;
+  padding: 2rpx 0;
+}
+
+.modellist {
+  padding: 20rpx 0;
+}
+
+.borderr {
+  border-right: 1px solid #f0f0f0;
+}
+
+.closeicon {
+  width: 24rpx;
+  height: 24rpx;
+  position: absolute;
+  top: 30rpx;
+  right: 30rpx;
+}

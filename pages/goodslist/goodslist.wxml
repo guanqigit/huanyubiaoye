@@ -1,0 +1,176 @@
+<view class="container">
+  <view class='flex flex-column header'>
+    <view class='flex flex-row row'>
+      <view class='flex flex-row flex-centers flex-box' style='background:#f5f7fa;height:68rpx;border-radius: 2px;z-index:2000;'>
+        <view class='flex flex-row flex-box flex-centers'>
+          <image src='../../image/search.png' class="search"></image>
+          <input type='txt' class='searchinput flex flex-box' placeholder='{{placeholder}}' bindfocus="searchfocus"></input>
+        </view>
+      </view>
+      <view class='flex flex-column searchhistory' animation="{{animationData1}}" hidden='{{isearchhistory}}'>
+        <view class='flex title  modelpadding'>
+          <text>历史搜索</text>
+        </view>
+        <view class='flex flex-wrap modelpadding1'>
+          <text class='searchlist' wx:for="{{srarchlist}}" wx:key=''>{{item}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='flex flex-space flex-centers flex-box'>
+      <view class='flex swiperbox' bindtap='searchbtn'>
+        <swiper vertical='true' class='swiper' current="{{current}}">
+          <block wx:for="{{searchnav}}" wx:key=''>
+            <swiper-item>
+              <text>{{item.txt}}</text>
+            </swiper-item>
+          </block>
+        </swiper>
+        <image src='../../image/topbtn.png' class='searchbtn'></image>
+        <image src='../../image/bottombtn.png' class='searchbtn bottombtn'></image>
+      </view>
+      <view class='flex flex-row flex-centers'>
+        <view class="phone_one" bindtap="clickPerson">
+          <view class="phone_personal">{{firstPerson}}</view>
+          <image src="../../image/drop-down.png" class="personal_image {{selectArea ? 'rotateRight' :''}}"></image>
+        </view>
+        <view class="person_box">
+          <view class="phone_select" hidden="{{selectPerson}}">
+            <view class='flex flex-row flex-center select_one1' wx:for="{{sortlist}}" wx:key='' bindtap="mySelect" data-me="{{item.value}}" data-ids="{{index}}">
+              <view class="select_one" >{{item.value}}</view>
+              <image src='{{item.img}}' class='nice'></image>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='flex flex-row flex-centers' style='background:#f5f7fa;padding:0 20rpx;height:54rpx;' bindtap='screen'>
+        <image src='../../image/screen.png' class='screenimg'></image>
+        <text>筛选</text>
+      </view>
+      <view class='flex flex-center'>
+        <image src='{{sortimg}}' class='sortimg' bindtap='clicksort'></image>
+      </view>
+    </view>
+  </view>
+  <view class='flex flex-center flex-box swiperbox1'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots class='swiper1' indicator-active-color="#fff" indicator-color="rgba(255,255,255,0.4)" circular='true'>
+      <block wx:for="{{imgUrls}}" wx:key=''>
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='flex flex-column listbox1' hidden='{{sortcode==1}}'>
+    <view class='flex flex-space list-item1' wx:for="{{producFrametList}}" wx:key="">
+      <view class='flex'>
+        <image src='../../image/new.jpg' class='newicon' wx:if="{{item.isNew==1}}"></image>
+        <view class='flex flex-center'>
+          <image class='list-img1' src='{{item.icon}}'></image>
+        </view>
+      </view>
+      <view class='flex flex-column'>
+        <view class='flex flex-space row15'>
+          <text class='describecontent' style='width:80%'>{{item.brandModel}}</text>
+          <text class='flex flex-center design' style='width:20%'>{{item.outWidth}}</text>
+        </view>
+        <view class='flex row'>
+          <text class='describecontent' style='font-size:22rpx;color:#444;'>{{item.name}}</text>
+        </view>
+        <view class='flex flex-space row'>
+          <view class='flex flex-row flex-end-align'>
+            <text style='font-size:30rpx;color:#0bb3cc'>￥{{item.minPrice}}</text>
+            <text style='font-size:22rpx;color:#888'>￥{{item.minPrice}}</text>
+          </view>
+          <view class='flex flex-centers'>
+            <text style='font-size:20rpx;color:#444'>{{item.praiseRate}}%好评</text>
+          </view>
+        </view>
+        <view class='flex flex-space'>
+          <view class='flex flex-row flex-end-align'>
+            <image src='../../image/vouchericon.png' class='vouchericon' wx:if="{{item.isCoupons==1}}"></image>
+          </view>
+          <view class='flex flex-centers'>
+            <text style='font-size:28rpx;color:#fff;padding:1rpx 15rpx;background:#0bb3cc;border-radius:2px;'>试戴</text>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <view class='flex flex-wrap listbox' hidden='{{sortcode==0}}'>
+    <view class='flex flex-column list-item' wx:for="{{producFrametList}}" wx:key="">
+      <image src='../../image/new.jpg' class='newicon' wx:if="{{item.isNew==1}}"></image>
+      <view class='flex flex-center'>
+        <image class='list-img' src='{{item.icon}}'></image>
+      </view>
+      <view class='flex flex-space'>
+        <text class='describecontent' style='width:80%'>{{item.brandModel}}</text>
+        <text class='flex flex-center design' style='width:20%'>{{item.outWidth}}</text>
+      </view>
+      <view class='flex'>
+        <text class='describecontent' style='font-size:22rpx;color:#444;'>{{item.name}}</text>
+      </view>
+      <view class='flex flex-space'>
+        <view class='flex flex-row flex-end-align'>
+          <text style='font-size:30rpx;color:#0bb3cc'>￥{{item.minPrice}}</text>
+          <text style='font-size:22rpx;color:#888'>￥{{item.minPrice}}</text>
+        </view>
+        <view class='flex flex-centers'>
+          <text style='font-size:20rpx;color:#444'>{{item.praiseRate}}%好评</text>
+        </view>
+      </view>
+      <view class='flex flex-space'>
+        <view class='flex flex-row flex-end-align'>
+          <image src='../../image/vouchericon.png' class='vouchericon' wx:if="{{item.isCoupons==1}}"></image>
+        </view>
+        <view class='flex flex-centers'>
+          <text style='font-size:28rpx;color:#fff;padding:1rpx 15rpx;background:#0bb3cc;border-radius:2px;'>试戴</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='flex gotop' wx:if="{{scrollTop>500}}">
+    <image src='../../image/gotop.png' class='gotopimg'></image>
+  </view>
+</view>
+<view class='mode1 flex flex-end' animation="{{animationData}}" bindtap='model1' hidden='{{ismodel1}}'>
+  <view class='flex flex-column screenbox' catchtap="111" hidden='{{isscreen}}'>
+    <view class='flex flex-column'>
+      <view class='flex screentitle'>
+        <text>品牌</text>
+      </view>
+      <view class='flex flex-wrap screenlistbox'>
+        <text class='screenlist screenlist-ac' catchtap="select">罗敦司</text>
+        <text class='screenlist'>依视路</text>
+        <text class='screenlist'>罗杰斯</text>
+        <text class='screenlist'>柯达</text>
+      </view>
+    </view>
+    <view class='flex flex-column'>
+      <view class='flex screentitle'>
+        <text>品牌</text>
+      </view>
+      <view class='flex flex-wrap screenlistbox'>
+        <text class='screenlist screenlist-ac' catchtap="select">罗敦司</text>
+        <text class='screenlist'>依视路</text>
+        <text class='screenlist'>罗杰斯</text>
+        <text class='screenlist'>柯达</text>
+      </view>
+    </view>
+    <view class='flex flex-column'>
+      <view class='flex screentitle'>
+        <text>品牌</text>
+      </view>
+      <view class='flex flex-wrap screenlistbox'>
+        <text class='screenlist screenlist-ac' catchtap="select">罗敦司</text>
+        <text class='screenlist'>依视路</text>
+        <text class='screenlist'>罗杰斯</text>
+        <text class='screenlist'>柯达</text>
+      </view>
+    </view>
+    <view class='flex flex-space screensubbox'>
+      <text class='flex flex-box flex-center screensub1'>重置</text>
+      <text class='flex flex-box flex-center screensub2'>完成</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,98 @@
+<view class="container">
+  <view class='flex flex-column content'>
+    <image src='../../image/orderpaybg.png' class='orderpaybg'></image>
+    <view class='flex flex-column flex-center header'>
+      <view class='flex'>
+        <text class='font26 color4'>支付剩余时间</text>
+      </view>
+      <view class='flex'>
+        <text class='font24 color2'>09:43</text>
+      </view>
+      <view class='flex flex-row flex-end-align'>
+        <text class='font28 color6'>支付</text>
+        <text class='font70 colorblue'>￥1060.00</text>
+        <text class='font28 color6'>元</text>
+      </view>
+      <view class='flex'>
+        <text class='font24 color4'>订单编号：P1234569635</text>
+      </view>
+    </view>
+    <view class='flex flex-column paytype'>
+      <view class='flex flex-row flex-centers'>
+        <image src='../../image/spot.png' class='spot'></image>
+        <text class='font30 color4'>支付方式</text>
+      </view>
+      <view class='paytypelist flex flex-space flex-centers'>
+        <view class='flex flex-row flex-centers'>
+          <image src='../../image/alipayicon.png' class='alipayicon'></image>
+          <text class='font28 color4'>支付宝支付</text>
+        </view>
+        <view class='flex flex-center'>
+          <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio">
+              <radio value="1" class='radioicon' color='#0bb3cc' checked="{{isradio==1?'checked':''}}" />
+            </label>
+          </radio-group>
+        </view>
+      </view>
+      <view class='paytypelist flex flex-space flex-centers'>
+        <view class='flex flex-row flex-centers'>
+          <image src='../../image/wechaticon.png' class='wechaticon'></image>
+          <text class='font28 color4'>微信支付</text>
+        </view>
+        <view class='flex flex-center'>
+          <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio">
+              <radio value="2" class='radioicon' color='#0bb3cc' checked="{{isradio==2?'checked':''}}" />
+            </label>
+          </radio-group>
+        </view>
+      </view>
+      <view class='paytypelist flex flex-space flex-centers'>
+        <view class='flex flex-row flex-centers'>
+          <image src='../../image/unionpayicon.png' class='unionpayicon'></image>
+          <text class='font28 color4'>银联支付</text>
+        </view>
+        <view class='flex flex-center'>
+          <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio">
+              <radio value="3" class='radioicon' color='#0bb3cc' checked="{{isradio==3?'checked':''}}" />
+            </label>
+          </radio-group>
+        </view>
+      </view>
+      <view class='paytypelist flex flex-space flex-centers'>
+        <view class='flex flex-row flex-centers'>
+          <image src='../../image/friendsicon.png' class='friendsicon'></image>
+          <text class='font28 color4'>微信好友代付</text>
+        </view>
+        <view class='flex flex-center'>
+          <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio">
+              <radio value="4" class='radioicon' color='#0bb3cc' checked="{{isradio==4?'checked':''}}" />
+            </label>
+          </radio-group>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='flex flex-center model' hidden='{{ismodel==0}}'>
+  <view class='flex flex-column model-box'>
+    <view class='flex flex-column model-header flex-center'>
+    <image src='../../image/closeicon.png' class='closeicon' bindtap='closemodel'></image>
+      <text class='font30 color2'>人靠衣装，脸靠镜装~</text>
+      <text class='font30 color2'>人靠衣装，脸靠镜装~</text>
+      <text class='font26 color2 margint80'>未支付订单会被保留24小时，可前往个人中心-待支
+付订单结算购买。</text>
+    </view>
+    <view class='flex flex-space model-bottom'>
+      <view class='flex flex-center flex-box modellist borderr'>
+        <text class='font26 color6'>立即支付</text>
+      </view>
+      <view class='flex flex-center flex-box modellist'>
+        <text class='font26 colorblue'>确定离开</text>
+      </view>
+    </view>
+  </view>
+</view>

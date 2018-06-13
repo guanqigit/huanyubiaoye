@@ -1,0 +1,137 @@
+<view class="container">
+  <view class='flex flex-space tabbox'>
+    <view class="flex flex-center tabar {{tabar==0?'tabar-ac':''}}" data-bar="0" bindtap='tabar'>
+      <text>可使用(3)</text>
+    </view>
+    <view class="flex flex-center tabar {{tabar==1?'tabar-ac':''}}" data-bar="1" bindtap='tabar'>
+      <text>不可用(2)</text>
+    </view>
+    <view class='flex flex-center '>
+      <text class='couponbtn'>兑换券</text>
+    </view>
+  </view>
+  <view class='flex flex-column listbox'>
+    <view class='list flex flex-column' wx:if="{{tabar==0}}">
+      <view class='flex flex-column list-line'>
+        <image src='../../image/couronbg1.png' class='couronbg1'></image>
+        <view class='flex flex-space list-item'>
+          <view class='flex flex-column'>
+            <view class='flex flex-centers'>
+              <text class='font30'>￥</text>
+              <text class='font60'>50</text>
+            </view>
+            <text>满288使用</text>
+            <text>有效期：2018.02.05~2018.02.23</text>
+          </view>
+          <view class='flex flex-center flex-column'>
+            <view class='flex list-items marginb20'>
+              <text>宝岛眼镜馆</text>
+            </view>
+            <radio-group class="radio-group" bindchange="radioChange">
+              <label>
+                <radio value=checked " class="radio " color='#61e0d0' checked="checked "/>
+              </label>
+            </radio-group>
+          </view>
+        </view>
+        <view class='flex list-items flex-row flex-centers'>
+            <text>使用规则</text>
+            <image src='../../image/bottomicon.png' class='bottomicon'></image>
+        </view>
+        <view class='flex flex-column margint20 paddingl25'>
+        <text class='font20 color6'>1、只限在本店铺使用。</text>
+        <text class='font20 color6'>2、本券限购买B类镜架使用。</text>
+        </view>
+      </view>
+      <view class='flex flex-column list-line'>
+        <image src='../../image/couronbg1.png' class='couronbg1'></image>
+        <view class='flex flex-space list-item'>
+          <view class='flex flex-column'>
+            <view class='flex flex-centers'>
+              <text class='font30'>￥</text>
+              <text class='font60'>50</text>
+            </view>
+            <text>满288使用</text>
+            <text>有效期：2018.02.05~2018.02.23</text>
+          </view>
+          <view class='flex flex-center flex-column'>
+          <view class='flex list-items marginb20'>
+            <text>宝岛眼镜馆</text>
+        </view>
+            <radio-group class="radio-group " bindchange="radioChange ">
+              <label>
+                <radio value=checked " class="radio " color='#61e0d0' checked="checked " />
+              </label>
+            </radio-group>
+          </view>
+        </view>
+        <view class='flex list-items flex-row flex-centers'>
+            <text>使用规则</text>
+            <image src='../../image/bottomicon.png' class='bottomicon'></image>
+        </view>
+        <view class='flex flex-column margint20 paddingl25'>
+        <text class='font20 color6'>1、只限在本店铺使用。</text>
+        <text class='font20 color6'>2、本券限购买B类镜架使用。</text>
+        </view>
+      </view>
+    </view>
+    <view class='list flex flex-column' wx:if="{{tabar==1}}">
+      <view class='flex flex-column list-line'>
+        <image src='../../image/couronbg1.png' class='couronbg1'></image>
+        <view class='flex flex-space list-item'>
+          <view class='flex flex-column'>
+            <view class='flex flex-centers'>
+              <text class='font30'>￥</text>
+              <text class='font60'>50</text>
+            </view>
+            <text>满288使用</text>
+            <text>有效期：2018.02.05~2018.02.23</text>
+          </view>
+          <view class='flex flex-center'>
+            <radio-group class="radio-group" bindchange="radioChange">
+              <label>
+                <radio value=checked " class="radio " color='#61e0d0' checked="checked "/>
+              </label>
+            </radio-group>
+          </view>
+        </view>
+        <view class='flex list-items flex-row flex-centers'>
+            <text>使用规则</text>
+            <image src='../../image/bottomicon.png' class='bottomicon'></image>
+        </view>
+        <view class='flex flex-column margint20 paddingl25'>
+        <text class='font20 color6'>1、只限在本店铺使用。</text>
+        <text class='font20 color6'>2、本券限购买B类镜架使用。</text>
+        </view>
+      </view>
+      <view class='flex flex-column list-line'>
+        <image src='../../image/couronbg1.png' class='couronbg1'></image>
+        <view class='flex flex-space list-item'>
+          <view class='flex flex-column'>
+            <view class='flex flex-centers'>
+              <text class='font30'>￥</text>
+              <text class='font60'>100</text>
+            </view>
+            <text>满288使用</text>
+            <text>有效期：2018.02.05~2018.02.23</text>
+          </view>
+          <view class='flex flex-center'>
+            <radio-group class="radio-group " bindchange="radioChange ">
+              <label>
+                <radio value=checked " class="radio " color='#61e0d0' checked="checked " />
+              </label>
+            </radio-group>
+          </view>
+        </view>
+        <view class='flex list-items flex-row flex-centers'>
+            <text>使用规则</text>
+            <image src='../../image/bottomicon.png' class='bottomicon'></image>
+        </view>
+        <view class='flex flex-column margint20 paddingl25'>
+        <text class='font20 color6'>1、只限在本店铺使用。</text>
+        <text class='font20 color6'>2、本券限购买B类镜架使用。</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

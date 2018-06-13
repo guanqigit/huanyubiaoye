@@ -1,0 +1,191 @@
+<view class="container">
+  <view class='flex flex-center'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots class='swiper' indicator-active-color="#fff" indicator-color="rgba(255,255,255,0.4)" circular='true'>
+      <block wx:for="{{imglist}}" wx:key=''>
+        <swiper-item>
+          <image src="{{item.imagePath}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='flex flex-centers flex-row searchbox' wx:if="{{isdata==0}}">
+    <view class='flex flex-box flex-centers flex-space'>
+      <view class='flex flex-row flex-centers'>
+        <image src='../../image/search.png' class="search"></image>
+        <input placeholder='搜索镜片、镜框等' bindfocus='searchpage'></input>
+      </view>
+      <view class='flex flex-center' bindtap='demarcateddata'>
+        <text class="binddata">修改标定数据</text>
+      </view>
+    </view>
+  </view>
+  <view class='flex flex-centers flex-row searchboxs' wx:if="{{isdata==1}}">
+    <view class='flex flex-box flex-centers flex-space'>
+      <view class='flex flex-row flex-centers line' style='width:70%'>
+        <image src='../../image/search.png' class="search"></image>
+        <input placeholder='搜索镜片、镜框等' bindfocus='searchpage'></input>
+      </view>
+      <view class='flex flex-center line' style='width:15%;background:#0bb3cc;' bindtap='demarcateddata'>
+        <text class="binddata" style='color:#fff'>标定数据</text>
+      </view>
+    </view>
+  </view>
+  <view class='flex flex-column navigationbox'>
+    <view class='flex flex-space navigationlist'>
+      <view class='flex flex-column flex-center'>
+        <image src='../../image/routineicon.png' class='routineicon'></image>
+        <text>常规镜</text>
+      </view>
+      <view class='flex flex-column flex-center'>
+        <image src='../../image/sunglasses.png' class='sunglasses'></image>
+        <text>太阳镜</text>
+      </view>
+      <view class='flex flex-column flex-center'>
+        <image src='../../image/lensicon.png' class='navigationoimg'></image>
+        <text>镜片</text>
+      </view>
+      <view class='flex flex-column flex-center'>
+        <image src='../../image/peripheryicon.png' class='peripheryicon'></image>
+        <text>周边</text>
+      </view>
+    </view>
+  </view>
+  <view class='flex flex-column txtdescribe'>
+    <view class='flex flex-space'>
+      <text></text>
+      <view class='flex flex-row flex-centers'>
+        <text style='font-size:22rpx;color:#888'>更多文选</text>
+        <image src='../../image/righticon.png' class='righticon'></image>
+      </view>
+    </view>
+    <swiper autoplay="{{autoplay}}" interval="{{interval}}" class="Articleswiper" duration="{{duration}}" circular='true'>
+      <block wx:for="{{Articlelist}}" wx:key=''>
+        <swiper-item>
+          <view class='flex flex-row flex-centers describebox'>
+            <view class='flex flex-center'>
+              <image src='{{item.icon}}' class='egimg'></image>
+            </view>
+            <view class='flex flex-column flex-box'>
+              <view class='flex flex-row'>
+                <text class='design flex flex-center'>{{item.type}}</text>
+                <text class='describecontent'>{{item.title}}</text>
+              </view>
+              <view class='flex flex-column'>
+                <text class='describecontents'>{{item.content}}</text>
+                <view class='flex flex-end flex-end-align flex-row flex-centers' style='margin-top:20rpx;'>
+                  <image src='../../image/homeicon.png' class='homeicon'></image>
+                  <text class='describecontents'>{{item.storeName}}</text>
+                  <image src='../../image/righticon.png' class='righticon'></image>
+                </view>
+              </view>
+            </view>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <view class='flex flex-space navbox'>
+      <view class='flex flex-center flex-box flex-column' data-nav="1" bindtap='navtab'>
+        <text class="nav-item {{navtype==1?'nav-items':''}}">新品镜架</text>
+        <text class="nav-line {{navtype==1?'nav-lines':''}}"></text>
+      </view>
+      <view class='flex flex-center flex-box flex-column' data-nav="2" bindtap='navtab'>
+        <text class="nav-item {{navtype==2?'nav-items':''}}">特价镜片</text>
+        <text class="nav-line {{navtype==2?'nav-lines':''}}"></text>
+      </view>
+    </view>
+  </view>
+  <view class='flex flex-wrap listbox'>
+    <view class='flex flex-column list-item' wx:for="{{producFrametList}}" wx:key="" bindtap='detail' wx:if="{{navtype==1}}">
+      <image src='../../image/new.png' class='newicon' wx:if="{{item.isNew==1}}"></image>
+      <view class='flex flex-center'>
+        <image class='list-img' src='{{item.icon}}'></image>
+      </view>
+      <view class='flex flex-space'>
+        <text class='describecontent' style='width:80%'>{{item.brandModel}}</text>
+        <text class='flex flex-center design' style='width:20%' wx:if="{{isdata==0}}">{{item.outWidth}}</text>
+        <text class='flex flex-center design' style='width:20%' wx:if="{{isdata==0&&Widthdata-item.outWidth>12}}">不适合</text>
+        <text class='flex flex-center design' style='width:20%' wx:if="{{isdata==0&&Widthdata-item.outWidth<-12}}">不适合</text>
+        <text class='flex flex-center design' style='width:20%' wx:if="{{isdata==0&&Widthdata-item.outWidth>-5&&Widthdata-item.outWidth<5}}">适合</text>
+        <text class='flex flex-center design' style='width:20%' wx:if="{{isdata==0&&Widthdata-item.outWidth>-12&&Widthdata-item.outWidth<-5}}">內收</text>
+        <text class='flex flex-center design' style='width:20%' wx:if="{{isdata==0&&Widthdata-item.outWidth>5&&Widthdata-item.outWidth<12}}">外宽</text>
+      </view>
+      <view class='flex'>
+        <text class='describecontent' style='font-size:22rpx;color:#444;'>{{item.name}}</text>
+      </view>
+      <view class='flex flex-space'>
+        <view class='flex flex-row flex-end-align'>
+          <text style='font-size:30rpx;color:#0bb3cc'>￥{{item.minPrice}}</text>
+        </view>
+        <view class='flex flex-centers'>
+          <text style='font-size:20rpx;color:#444'>{{item.praiseRate}}%好评</text>
+        </view>
+      </view>
+      <view class='flex flex-space'>
+        <view class='flex flex-row flex-end-align'>
+          <image src='../../image/vouchericon.png' class='vouchericon' wx:if="{{item.isCoupons==1}}"></image>
+        </view>
+        <view class='flex flex-centers' wx:if="{{item.isTry==1}}">
+          <text style='font-size:28rpx;color:#fff;padding:1rpx 15rpx;background:#0bb3cc;border-radius:2px;'>试戴</text>
+        </view>
+      </view>
+    </view>
+    <view class='flex flex-column list-items' wx:for="{{getSpecialLensProductList}}" wx:key="" bindtap='lensdetail' wx:if="{{navtype==2}}">
+      <image src='../../image/new.png' class='newicon' wx:if="{{item.isNew==1}}"></image>
+      <view class='flex flex-center'>
+        <image class='list-imgs' src='{{item.icon}}'></image>
+      </view>
+      <view class='flex flex-column' style='padding:2%'>
+        <view class='flex flex-space'>
+          <text class='describecontent' style='width:100%'>{{item.brandModel}}</text>
+        </view>
+        <view class='flex'>
+          <text class='describecontent' style='font-size:22rpx;color:#444;'>{{item.name}}</text>
+        </view>
+        <view class='flex flex-space'>
+          <view class='flex flex-row flex-end-align' style='margin:30rpx 0 20rpx 0'>
+            <image src='../../image/vouchericon.png' class='vouchericon' wx:if="{{item.isCoupons==1}}"></image>
+          </view>
+        </view>
+        <view class='flex flex-space'>
+          <view class='flex flex-row flex-end-align'>
+            <text style='font-size:30rpx;color:#0bb3cc'>￥{{item.minPrice}}</text>
+          </view>
+          <view class='flex flex-centers'>
+            <text style='font-size:20rpx;color:#444'>{{item.praiseRate}}%好评</text>
+          </view>
+        </view>
+        
+      </view>
+    </view>
+    <view class='flex flex-center' style='width:100%;margin-top:20rpx' wx:if="{{isbottom==1}}">
+      <text>已经到底了~</text>
+    </view>
+  </view>
+  <view class='flex gotop' wx:if="{{scrollTop>500}}" bindtap="totop">
+    <image src='../../image/gotop.png' class='gotopimg'></image>
+  </view>
+</view>
+<!-- 弹出层 -->
+<view class='model' hidden='{{ismodel}}'>
+  <view class='flex flex-column model-box'>
+    <view class='flex flex-center model-header'>
+      <text>权限请求</text>
+    </view>
+    <view class='model-content flex flex-column'>
+      <view class='model-title'>允许标适平台使用以下微信权限：</view>
+      <view class='flex flex-row flex-centers' style='margin-bottom:10rpx'>
+        <image src='../../image/gotop.png' class='model-img'></image>
+        <text>地理位置信息</text>
+      </view>
+      <view class='flex flex-row flex-centers'>
+        <image src='../../image/gotop.png' class='model-img'></image>
+        <text>个人公开信息</text>
+        <text style='color:#666;'>（昵称、头像等）</text>
+      </view>
+    </view>
+    <view class='flex flex-center '>
+      <button open-type='getUserInfo' class='model-btn' lang="zh_CN" bindgetuserinfo="onGotUserInfo">前往授权</button>
+    </view>
+  </view>
+</view>

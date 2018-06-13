@@ -1,0 +1,62 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/nearbyshop/nearbyshop",
+    "pages/member/member",
+    "pages/shoppingcart/shoppingcart",
+    "pages/orderpayment/orderpayment",
+    "pages/chosedata/chosedata",
+    "pages/manaddress/manaddress",
+    "pages/coupon/coupon",
+    "pages/confirmorder/confirmorder",
+    "pages/addaddress/addaddress",
+    "pages/lenscollocation/lenscollocation",
+    "pages/commentdetail/commentdetail",
+    "pages/detaillens/detaillens",
+    "pages/lensdetail/lensdetail",
+    "pages/detail/detail",
+    "pages/goodslist/goodslist",
+    "pages/my-message/my-message",
+    "pages/afterSale/afterSale",
+    "pages/member-message/member-message",
+    "pages/search/search",
+    "pages/stie-manage/stie-manage",
+    "pages/user-defined-data/user-defined-data",
+    "pages/afterSale-messag/afterSale-messag",
+    "pages/calibration/calibration",
+    "pages/audition/audition"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#08a8c0",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#888888",
+    "selectedColor": "#222222",
+    "backgroundColor": "#FFF",
+    "borderStyle": "#dfdfdf",
+    "list": [
+      {
+        "selectedIconPath": "image/home.png",
+        "iconPath": "image/home-null.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "image/shoppingcar.png",
+        "iconPath": "image/shoppingcar-null.png",
+        "pagePath": "pages/shoppingcart/shoppingcart",
+        "text": "购镜单"
+      },
+      {
+        "selectedIconPath": "image/personal.png",
+        "iconPath": "image/personal-null.png",
+        "pagePath": "pages/member/member",
+        "text": "会员中心"
+      }
+    ]
+  }
+}

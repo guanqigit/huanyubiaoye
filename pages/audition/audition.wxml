@@ -1,0 +1,69 @@
+<view class="container">
+  <view class='flex flex-center trylensbox'>
+    <image src='../../image/logo.png' class='logoicon'></image>
+    <!--<image src='../../image/auditionbg.png' class='auditionbg'></image>-->
+    <view class='auditionbg'>
+    <!--<web-view src="https://mp.weixin.qq.com/"></web-view>-->
+    </view>
+    <iframe src="https://mp.weixin.qq.com/"></iframe>
+    <view class='flex flex-row flex-center sharebox' bindtap='share'>
+      <image src='../../image/shareicon.png' class='shareicon'></image>
+      <button open-type="share" class='font30 colorf sharebtn'>分享靓照</button>
+    </view>
+    <view class='flex flex-column flex-center addcupboardbox' bindtap='addcupboard'>
+      <text class='font30 colorf txtcenter'>{{tabinfo.txt}}</text>
+    </view>
+    <view class='flex flex-column flex-center chosephotobox' bindtap='chosephoto'>
+      <image src='../../image/photograph.png' class='photograph'></image>
+    </view>
+    <view class='font27 colorf seedetail' animation="{{animationData2}}">查看详情</view>
+    <view class='flex flex-column main' animation="{{animationData1}}">
+      <view class='flex flex-column tostbox'>
+        <view class='flex flex-center openbox' bindtap='cupboard'>
+          <image src='../../image/addupbg.png' class='addupbg'></image>
+          <text class='font30 color2' style='z-index:10'>{{cupboardcode==0?'展开试镜橱':'收回试镜橱'}}</text>
+        </view>
+        <view class="flex flex-column">
+          <view class='flex flex-space flex-centers'>
+            <view class='flex flex-row flex-centers'>
+              <text class='font30 color2'>{{goodsinfo.name}}</text>
+              <text class='coloryellow borderyellow'>{{goodsinfo.issh}}</text>
+            </view>
+            <view class='flex flex-row flex-center'>
+              <text class='font30 colorblue'>￥{{goodsinfo.pic}}</text>
+              <text class='color8 font22 text-line'>￥{{goodsinfo.yhpic}}</text>
+            </view>
+          </view>
+          <scroll-view scroll-x="true" class='attrlist'>
+            <text class="attritem font26 color2 {{classstate==index?'select':''}}" wx:for="{{goodsinfo.class}}" wx:key='' bindtap='calssstate' data-id="{{index}}">{{item.color}}</text>
+          </scroll-view>
+        </view>
+        <view class='flex flex-row auditionrecordbox footer' hidden='{{cupboard==1}}'>
+          <view class='flex flex-column flex-center' style='margin-right:10rpx;line-height:25rpx;padding-top:2rpx'>
+            <image src='{{tryicon}}' class='footprint'></image>
+            <text class='font23 color6' style='margin-left:5rpx;margin-top:5rpx;'>试戴记录</text>
+          </view>
+          <view class='flex auditionrecordboxs'>
+            <scroll-view scroll-x="true" class='auditionrecord' scroll-with-animation="true" scroll-into-view="{{toview}}" scroll-left="{{scrollleft}}">
+              <view class='display' wx:for="{{auditionrecordstoy}}" wx:key='' bindtap='auditionstate' data-id="{{index}}" id="{{'toview'+index}}">
+                <image src='{{item.img}}' class="egimg {{auditionstate==index?'egimgac':''}}"></image>
+                <image src='../../image/cupboard.png' class='cupboardgrey' hidden='{{item.isadd==0}}'></image>
+              </view>
+            </scroll-view>
+          </view>
+        </view>
+        <view class='flex flex-row cupboard' animation="{{animationData}}" hidden='{{auditioncupboard.length==0}}'>
+          <view class='flex flex-column flex-centers' style='margin-right:10rpx;line-height:25rpx;padding-top:2rpx'>
+            <image src='../../image/cupboard-ac.png' class='footprint'></image>
+            <text class='font23 color6' style='width:30rpx;margin-top:5rpx;margin-left:5rpx;'>试镜橱</text>
+          </view>
+          <scroll-view scroll-x="true" class='auditionrecord' scroll-with-animation="true" scroll-into-view="{{sjctoview}}">
+            <view class='display' wx:for="{{auditioncupboard}}" wx:key='' bindtap='sjcstate' data-id="{{index}}" id="{{'toview'+index}}">
+              <image src='{{item.img}}' class="egimg {{sjcstate==index?'egimgac ':' '}}"></image>
+            </view>
+          </scroll-view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

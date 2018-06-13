@@ -1,0 +1,540 @@
+page {
+  /* height: 100%; */
+  background: #f5f7fa;
+}
+
+.container {
+  height: auto;
+}
+
+.nav-box {
+  padding: 0 30rpx;
+  background: #fff;
+  font-size: 28rpx;
+  color: #222;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.phone {
+  width: 35rpx;
+  height: 38rpx;
+}
+
+.shoppingcar {
+  width: 39rpx;
+  height: 32rpx;
+}
+
+.nav-item {
+  padding: 30rpx 0 20rpx 0;
+}
+
+.nav-ac {
+  color: #0bb3cc;
+}
+
+.item-line {
+  width: 86rpx;
+  height: 4rpx;
+  background-color: transparent;
+  border-radius: 1px;
+}
+
+.item-lines {
+  background-color: #0bb3cc;
+}
+
+.swiperbox {
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+  height: 420rpx;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper .wx-swiper-dot {
+  margin-bottom: 30rpx;
+}
+
+.videobtn {
+  width: 96rpx;
+  height: 42rpx;
+  background-color: #fff;
+  border-radius: 2px;
+  border: solid 1px #ffc619;
+  color: #ffc619;
+  font-size: 24rpx;
+  position: absolute;
+  bottom: 45rpx;
+  right: 30rpx;
+}
+
+.playicon {
+  width: 12rpx;
+  height: 18rpx;
+  margin-left: 8rpx;
+}
+
+.header-info {
+  margin: -30rpx 30rpx 15rpx 30rpx;
+  background-color: #fff;
+  box-shadow: 0px 5px 18px 0px rgba(186, 186, 186, 0.38);
+  border-radius: 4px;
+  font-size: 24rpx;
+  color: #666;
+  z-index: 10;
+  padding: 20rpx 20rpx 30rpx;
+}
+
+.header-infos {
+  margin: 10rpx 30rpx 30rpx;
+  background-color: #fff;
+  box-shadow: 0px 5px 18px 0px rgba(186, 186, 186, 0.38);
+  border-radius: 4px;
+  font-size: 24rpx;
+  color: #666;
+  z-index: 10;
+  padding: 0 35rpx 25rpx;
+}
+
+.header-title {
+  color: #222;
+  font-size: 30rpx;
+  padding-bottom: 20rpx;
+}
+
+.header-icon {
+  border-radius: 2px;
+  border: solid 1px #ffc619;
+  font-size: 20rpx;
+  color: #ffc619;
+  padding: 0 10rpx;
+  margin-left: 10rpx;
+}
+
+.header-name {
+  color: #444;
+}
+
+.header-pic {
+  font-size: 34rpx;
+  color: #0bb3cc;
+  padding: 20rpx 0;
+}
+
+.jkcolor {
+  width: 38rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+
+.jkcolor-title {
+  font-size: 26rpx;
+  color: #222;
+}
+
+.margin-b20 {
+  margin-bottom: 20rpx;
+}
+
+.margin-b15 {
+  margin-bottom: 15rpx;
+}
+
+.jkcolor-name {
+  background-color: #f2f4f7;
+  border-radius: 4px;
+  padding: 10rpx 20rpx;
+  margin-right: 40rpx;
+}
+
+.border-b {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.jkcolor-box {
+  padding-top: 30rpx;
+}
+
+.guiginfoimg {
+  width: 33rpx;
+  height: 36rpx;
+  margin-right: 20rpx;
+}
+
+.guiginfo {
+  font-size: 24rpx;
+  color: #444;
+  padding: 0 20rpx;
+}
+
+.vouchericon {
+  width: 64rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+
+.righticon {
+  width: 16rpx;
+  height: 28rpx;
+}
+
+.jkcolor-content {
+  font-size: 26rpx;
+  color: #222;
+  padding: 30rpx 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.jkcolor-contents {
+  font-size: 26rpx;
+  color: #222;
+  padding: 30rpx 0;
+}
+
+.detailintroduction {
+  background: #fff;
+  padding: 30rpx 30rpx 100rpx;
+  font-size: 30rpx;
+  color: #666;
+}
+
+.detailintroductionimg {
+  width: 100%;
+  border-radius: 4px;
+  height: 438rpx;
+}
+
+.lensintroduction {
+  padding: 30rpx 30rpx 0 30rpx;
+  font-size: 28rpx;
+  color: #666;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}
+.lensintroductions {
+  padding: 0 30rpx;
+  font-size: 28rpx;
+  color: #666;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.lensintroductionimg {
+  width: 8rpx;
+  height: 8rpx;
+  margin-right: 7rpx;
+}
+
+.lensintroductiontitle {
+  font-size: 30rpx;
+  color: #222;
+}
+
+.margin-t20 {
+  margin-top: 20rpx;
+}
+
+.lensintroductiondetail {
+  font-size: 22rpx;
+  color: #888;
+}
+
+.righticonlens {
+  width: 9rpx;
+  height: 16rpx;
+  margin-left: 8rpx;
+  margin-top: 5rpx;
+}
+
+.jplist {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.jplist-ac {
+  color: #0bb3cc;
+}
+
+.dline {
+  width: 64rpx;
+  height: 3rpx;
+  background-color: transparent;
+  margin-top: 9rpx;
+  display: block;
+  margin: 0 auto;
+}
+
+.dline-ac {
+  background-color: #0bb3cc;
+}
+
+.jplistbox {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+.jpitem {
+  display: inline-block;
+  text-align: center;
+  margin-right: 45rpx;
+  padding: 30rpx 0;
+}
+
+.jpdetailbox {
+  padding: 30rpx 30rpx 15rpx;
+  background: #fff;
+}
+
+.jpdetailinsetbox {
+  border: solid 1px #f0f0f0;
+  width: 100%;
+}
+
+.jpdetailinsetimg {
+  width: 100%;
+  height: 386rpx;
+  border-radius: 4rpx;
+}
+
+.jpdetaillist {
+  padding: 25rpx 20rpx;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 26rpx;
+  color: #222;
+}
+
+.jpdetaillists {
+  padding: 25rpx 20rpx;
+  font-size: 26rpx;
+  color: #222;
+}
+
+.jpdetaillistl {
+  padding: 0 20rpx 20rpx;
+  font-size: 26rpx;
+  color: #222;
+}
+
+.jpdetailname {
+  color: #444;
+}
+
+.jpdetailitem {
+  background-color: #f2f4f7;
+  border-radius: 4px;
+  padding: 10rpx 20rpx;
+  margin-right: 40rpx;
+}
+
+.jpdetailpic {
+  font-size: 30rpx;
+  color: #0bb3cc;
+  margin-right: 5rpx;
+}
+
+.solidright {
+  width: 6rpx;
+  height: 12rpx;
+  margin-left: 8rpx;
+}
+
+.seedetail {
+  font-size: 24rpx;
+  color: #888;
+}
+
+.seemore {
+  padding: 40rpx 0 20rpx;
+  font-size: 22rpx;
+  color: #888;
+}
+
+.longline {
+  width: 172rpx;
+  height: 1px;
+  margin: 0 8rpx;
+}
+
+.drop-down {
+  width: 12rpx;
+  height: 6rpx;
+  margin-left: 8rpx;
+}
+
+.userheader {
+  width: 70rpx;
+  height: 70rpx;
+  margin-right: 12rpx;
+  border-radius: 50px;
+}
+
+.margin-t40 {
+  margin-top: 40rpx;
+}
+
+.margin-b30 {
+  margin-bottom: 30rpx;
+}
+
+.username {
+  font-size: 28rpx;
+  color: #222;
+  margin-right: 12rpx;
+}
+
+.commenttype {
+  font-size: 20rpx;
+  color: #db0a0a;
+  padding: 0 10rpx;
+  border: 1px solid #db0a0a;
+}
+
+.time {
+  font-size: 28rpx;
+  color: #888;
+}
+
+.commentcontent {
+  font-size: 26rpx;
+  color: #888;
+}
+
+.font26 {
+  font-size: 26rpx;
+}
+
+.color4 {
+  color: #444;
+}
+
+.commentimg {
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 4px;
+}
+
+.thumbs-up {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 10rpx;
+}
+
+.commenticon {
+  width: 39rpx;
+  height: 37rpx;
+  margin-right: 10rpx;
+}
+
+.margin-r40 {
+  margin-right: 40rpx;
+}
+
+.margin-t60 {
+  margin-top: 60rpx;
+}
+
+.allcomment {
+  font-size: 24rpx;
+  color: #0bb3cc;
+  padding: 5rpx 12rpx;
+  border: 1px solid #0bb3cc;
+  border-radius: 4px;
+}
+
+.navigationbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 20rpx;
+  color: #666;
+  background: #fff;
+  border-top: 1px solid #cfcfcf;
+  z-index: 100000;
+}
+
+.navigationbarimg {
+  width: 48rpx;
+  height: 31rpx;
+  /* margin-bottom: 10rpx; */
+}
+
+.navigationbarimg1 {
+  width: 37rpx;
+  height: 33rpx;
+  /* margin-bottom: 10rpx; */
+}
+
+.navigationbarimg2 {
+  width: 34rpx;
+  height: 34rpx;
+  /* margin-bottom: 10rpx; */
+}
+
+.navigationbarbtn1 {
+  padding: 20rpx 30rpx;
+  font-size: 30rpx;
+  color: #fff;
+  background: #51e8c0;
+}
+
+.navigationbarbtn2 {
+  background: #0bb3cc;
+}
+
+.detailcontent {
+  font-size: 30rpx;
+  color: #222;
+  padding: 25rpx 30rpx;
+  background: #fff;
+  box-shadow: 0px 5px 18px 0px rgba(186, 186, 186, 0.38);
+  border-radius: 4px;
+  margin: -30rpx 30rpx 10rpx;
+  z-index: 10;
+}
+.detailtxt{
+  font-size: 26rpx;
+  color: #444;
+}
+.commentsortbox{
+  padding: 30rpx;
+  color: #222;
+  font-size: 26rpx;
+  background: #fff;
+}
+.commentsortitem{
+  padding: 10rpx 20rpx;
+  background-color: #f2f4f7;
+	border-radius: 4px;
+}
+.optometrydata{
+  width: 38rpx;
+  height: 38rpx;
+  margin-right: 20rpx;
+}
+.makecycle{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 18rpx;
+}
+.optometrydatatxt{
+  font-size: 24rpx;
+  color: #888;
+  margin-right: 10rpx;
+}
+.optometrydatatxts{
+  font-size: 24rpx;
+  color: #888;
+}
+.refractive{
+  width: 46rpx;
+  height: 34rpx;
+  margin-right: 15rpx;
+}

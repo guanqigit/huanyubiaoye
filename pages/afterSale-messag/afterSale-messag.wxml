@@ -1,0 +1,96 @@
+<view class='container'>
+  <view class='sale-msg-top flex flex-row flex-centers '>
+    <view class='liucheng-unit flex flex-column flex-centers flex-space'>
+      <text class='liucheng-title'>提交申请</text>
+      <image class='wancheng-icon' src='/image/sale-msge.png'></image>
+      <view class='liucheng-line'></view>
+      <text class='liucheng-time'>2018-03-08</text>
+      <text class='liucheng-time'>16:40</text>
+    </view>
+    <view class='liucheng-unit flex flex-column flex-centers flex-space'>
+      <text class='liucheng-title'>商家审核</text>
+      <image class='wancheng-icon' src='/image/sale-msge.png'></image>
+      <view class='liucheng-line'></view>
+      <text class='liucheng-time'>2018-03-08</text>
+      <text class='liucheng-time'>16:40</text>
+    </view>
+    <view class='liucheng-unit flex flex-column flex-centers flex-space'>
+      <text class='liucheng-title'>买家发货</text>
+      <!-- <image class='wancheng-icon' src='/image/sale-msge.png'></image> -->
+      <view class='liuchengyuan'></view>
+      <view class='liucheng-line'></view>
+      <text class='liucheng-time'>2018-03-08</text>
+      <text class='liucheng-time'>16:40</text>
+    </view>
+  </view>
+  <view class='liucheng-msg-unit '>
+    <view class='liucheng-text flex flex-column'>
+      <view class='flex flex-row flex-centers'>
+        <view class='liucheng-dian-icon'></view>
+        <text class='liucheng-text-title'>问题描述</text>
+        <text class='liucheng-text-red'>换新</text>
+      </view>
+      <view class='liucheng-text-text'>
+        当大家看到我的这一篇评论的时候，表示我对产品是认可的，尽管我此刻的评论是复制粘贴的。这一方面是为了肯定商家的服务，另一方面是为了节约自己的时间。
+      </view>
+      <view class='wenti-img-show flex flex-row flex-space'>
+        <image class='wenti-img' src='/image/auditionbg.png'></image>
+        <image class='wenti-img' src='/image/auditionbg.png'></image>
+        <image class='wenti-img' src='/image/auditionbg.png'></image>
+      </view>
+    </view>
+    <view class='liucheng-text flex flex-column' style='border-bottom:none;padding-bottom:0;margin-bottom:0'>
+      <view class='flex flex-row flex-centers'>
+        <view class='liucheng-dian-icon'></view>
+        <text class='liucheng-text-title'>售后信息</text>
+        <!-- <text class='liucheng-text-red'>换新</text> -->
+      </view>
+      <view class='liucheng-text-list flex flex-column'>
+        <text>售后类型：申请换新</text>
+        <text>售后单号：P2036987524</text>
+        <text>处理方式：用户寄回商品，商家重新发货</text>
+        <text>申请时间：2018-03-20 下午2:00</text>
+        <text>姓名：不露</text>
+        <text>电话：17771863243</text>
+        <text>地址：湖北省武汉市汉阳区XXX</text>
+      </view>
+    </view>
+  </view>
+  <view class='liucheng-msg-unit '>
+    <view class='liucheng-text flex flex-column' style='border-bottom:none;'>
+      <view class='flex flex-row flex-centers'>
+        <view class='liucheng-dian-icon'></view>
+        <text class='liucheng-text-title'>商家审核</text>
+        <!-- <text class='liucheng-text-red'>换新</text> -->
+      </view>
+      <view class='liucheng-text-text'>
+        当大家看到我的这一篇评论的时候，表示我对产品是认可的，尽管我此刻的评论是复制粘贴的。这一方面是为了肯定商家的服务，另一方面是为了节约自己的时间。
+      </view>
+    </view>
+    <view class='liucheng-text flex flex-column' style='border-bottom:none;padding-bottom:0;margin-bottom:0'>
+      <view class='flex flex-row flex-centers'>
+        <view class='liucheng-dian-icon'></view>
+        <text class='liucheng-text-title'>商家信息</text>
+        <!-- <text class='liucheng-text-red'>换新</text> -->
+      </view>
+      <view class='liucheng-text-list flex flex-column'>
+        <text>店名：黑人眼镜</text>
+        <text>地址：湖北省武汉市汉阳区XXX</text>
+        <text>电话：17771863243</text>
+        <text>收件人姓名：不露</text>
+      </view>
+    </view>
+  </view>
+  <view class='liucheng-msg-unit ' style='margin-bottom:50rpx;'>
+    <view class='liucheng-text flex flex-column' style='border-bottom:none;padding-bottom:0;margin-bottom:0'>
+      <view class='flex flex-row flex-centers'>
+        <view class='liucheng-dian-icon'></view>
+        <text class='liucheng-text-title'>平台反馈</text>
+        <!-- <text class='liucheng-text-red'>换新</text> -->
+      </view>
+      <view class='liucheng-text-text'>
+        当大家看到我的这一篇评论的时候，表示我对产品是认可的，尽管我此刻的评论是复制粘贴的。这一方面是为了肯定商家的服务，另一方面是为了节约自己的时间。
+      </view>
+    </view>
+  </view>
+</view>

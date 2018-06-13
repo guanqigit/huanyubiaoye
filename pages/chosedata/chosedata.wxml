@@ -1,0 +1,68 @@
+<!--为空时展示的图片信息-->
+<view class="flex flex-space header">
+  <view class='flex flex-column flex-center' data-id="0" bindtap='tabbar'>
+    <text class="tab {{tabcode==0?'tab-ac':''}}">平台验光数据</text>
+    <text class="tbaline {{tabcode==0?'tbaline-ac':''}}"></text>
+  </view>
+  <view class='flex flex-column flex-center' data-id="1" bindtap='tabbar'>
+    <text class="tab {{tabcode==1?'tab-ac':''}}">自定验光数据</text>
+    <text class="tbaline {{tabcode==1?'tbaline-ac':''}}"></text>
+  </view>
+  <view class='flex flex-center'>
+    <image src='../../image/addicon.png' class='addicon'></image>
+  </view>
+</view>
+<view wx:if="{{list.length>0&&tabcode==0}}" class="container">
+  <view wx:for="{{list}}" wx:for-index="idx" wx:for-item="itemName" wx:key="" class="flex flex-space list-item">
+    <view class="flex flex-center" data-ind="{{idx}}" bindtap="bindcheckbox">
+      <icon wx:if="{{itemName.checkboxs}}" class="flex icon-center " type="success" size="20 " color="#0bb3cc" />
+      <icon wx:else='' class="flex icon-center" type="circle" size="20" />
+    </view>
+    <view class='flex flex-column flex-box middlebox'>
+      <view class="flex flex-row flex-centers">
+        <image src='../../image/insetshop.png' class='insetshop'></image>
+        <text class='font28 color2'>收货人：</text>
+        <text class='font28 color2'>{{itemName.name}}</text>
+      </view>
+      <view class="flex flex-row flex-centers">
+        <image src='../../image/time.png' class='insetshop'></image>
+        <text class='font28 color2'>收货人：</text>
+        <text class='font28 color2'>{{itemName.name}}</text>
+      </view>
+      <view class="flex flex-row flex-centers">
+        <image src='../../image/ygsicon.png' class='insetshop'></image>
+        <text class='font28 color2'>收货人：</text>
+        <text class='font28 color2'>{{itemName.name}}</text>
+      </view>
+    </view>
+    <view class="flex flex-center">
+      <image src='../../image/search.png' class='editicon'></image>
+    </view>
+  </view>
+</view>
+<view wx:if="{{list.length>0&&tabcode==1}}" class="container">
+  <view wx:for="{{list}}" wx:for-index="idx" wx:for-item="itemName" wx:key="" class="flex flex-space list-item">
+    <view class="flex flex-center" data-ind="{{idx}}" bindtap="bindcheckbox">
+      <icon wx:if="{{itemName.checkboxs}}" class="flex icon-center " type="success" size="20 " color="#0bb3cc" />
+      <icon wx:else='' class="flex icon-center" type="circle" size="20" />
+    </view>
+    <view class='flex flex-column flex-box middlebox'>
+      <view class="flex flex-row flex-centers">
+        <image src='../../image/insetshop.png' class='insetshop'></image>
+        <text class='font28 color2'>收货人：</text>
+        <text class='font28 color2'>{{itemName.name}}</text>
+      </view>
+      <view class="flex flex-row flex-centers">
+        <image src='../../image/time.png' class='insetshop'></image>
+        <text class='font28 color2'>收货人：</text>
+        <text class='font28 color2'>{{itemName.name}}</text>
+      </view>
+    </view>
+    <view class="flex flex-center">
+      <image src='../../image/search.png' class='editicon'></image>
+    </view>
+  </view>
+</view>
+<view class="flex foot-btn center" bindtap="goAddAddress">
+  <text class="btn-color">添加地址</text>
+</view>

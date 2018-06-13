@@ -1,0 +1,66 @@
+<view class='container'>
+  <view class='stie-unit'>
+    <view class='stie-text-mian flex flex-row flex-space flex-centers'>
+      <image class='site-icon' src='/image/site.png'></image>
+      <view class='site-text flex flex-column'>
+        <view class='flex flex-row flex-space'>
+          <text>收货人：不露</text>
+          <text>17771863243 </text>
+        </view>
+        <text class='shouhuo-site'>收货地址：湖北省武汉市汉阳区钟家村小学六年级2班XXXX </text>
+      </view>
+    </view>
+    <view class='site-operate-mian flex flex-row flex-space flex-centers'>
+      <view class='flex flex-row flex-space flex-centers'>
+        <image wx:if='{{iSchoose}}'  class='radio-icon' src='/image/commentac.png'></image>
+        <view wx:if='{{!iSchoose}}'  class='not-radio-icon'></view>
+        <text>设为默认</text>
+      </view>
+      <view class='flex flex-row flex-space flex-centers'>
+        <image class='site-bianji' src='/image/bainji.png'></image>
+        <image catchtap='delSite' class='site-shanchu' src='/image/shanchu.png'></image>
+      </view>
+    </view>
+  </view>
+
+  <view class='stie-unit'>
+    <view class='stie-text-mian flex flex-row flex-space flex-centers'>
+      <image class='site-icon' src='/image/site.png'></image>
+      <view class='site-text flex flex-column'>
+        <view class='flex flex-row flex-space'>
+          <text>收货人：不露</text>
+          <text>17771863243 </text>
+        </view>
+        <text class='shouhuo-site'>收货地址：湖北省武汉市汉阳区钟家村小学六年级2班XXXX </text>
+      </view>
+    </view>
+    <view class='site-operate-mian flex flex-row flex-space flex-centers'>
+      <view class='flex flex-row flex-space flex-centers'>
+        <image wx:if='{{iSchoose}}' class='radio-icon' src='/image/commentac.png'></image>
+        <view wx:if='{{!iSchoose}}'  class='not-radio-icon'></view>
+        <text>设为默认</text>
+      </view>
+      <view class='flex flex-row flex-space flex-centers'>
+        <image class='site-bianji' src='/image/bainji.png'></image>
+        <image catchtap='delSite' class='site-shanchu' src='/image/shanchu.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='xugao'></view>
+  <view class='site-add-btn' bindtap='address'>
+    添加地址
+  </view>
+
+  <view wx:if='{{isDel}}' class='site-pop'>
+    <view class='site-opo-mian'>
+      <view class='del-hint'>确定永久删除收货地址？</view>
+      <view class='del-hint1'>删除后无发找回，请谨慎操作</view>
+      <view class='btn-box flex flex-row flex-space'>
+        <view catchtap='claerPop'>手滑了下</view>
+        <view class='del-btn'>确定删除</view>
+      </view>
+      <image catchtap='claerPop' class='claer-btn' src='/image/claer.png'> </image>
+    </view>
+  </view>
+  
+</view>

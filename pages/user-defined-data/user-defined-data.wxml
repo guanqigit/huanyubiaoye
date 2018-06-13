@@ -1,0 +1,88 @@
+<view class='container'>
+  <view class='defined-box'>
+    <view class='flex flex-row flex-centerss'>
+      <view class='dian-icon'></view>
+      <text class='defined-title'>数据名称：</text>
+      <text>大哥的数据</text>
+    </view>
+    <view class='defined-mian flex flex-column '>
+      <view class='defined-unit flex  flex-row  flex-space flex-centers'>
+        <text class='defined-name'></text>
+        <view class='defined-td'>右眼</view>
+        <view class='defined-td'>左眼</view>
+      </view>
+      <view class='defined-unit flex  flex-row  flex-space flex-centers'>
+        <text class='defined-name'>度数</text>
+        <view class='defined-td'>
+          <view class='select-box flex flex-space flex-center'>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+              <view class="picker">{{array[index]}}</view>
+            </picker>
+            <image class='daosanjia-icon' src='/image/bottombtn.png'></image>
+          </view>
+        </view>
+        <view class='defined-td'>
+          <view class='select-box flex flex-space flex-center'>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+              <view class="picker">{{array[index]}}</view>
+            </picker>
+            <image class='daosanjia-icon' src='/image/bottombtn.png'></image>
+          </view>
+        </view>
+      </view>
+      <view class='defined-unit flex  flex-row  flex-space flex-centers'>
+        <text class='defined-name'>散光</text>
+        <view class='defined-td'>
+          <view class='select-box flex flex-space flex-centers'>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+              <view class="picker">{{array[index]}}</view>
+            </picker>
+            <image class='daosanjia-icon' src='/image/bottombtn.png'></image>
+          </view>
+        </view>
+        <view class='defined-td'>
+          <view class='select-box flex flex-space flex-centers'>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+              <view class="picker">{{array[index]}}</view>
+            </picker>
+            <image class='daosanjia-icon' src='/image/bottombtn.png'></image>
+          </view>
+        </view>
+      </view>
+      <view class='defined-unit flex  flex-row  flex-space flex-centers'>
+        <text class='defined-name'>轴位</text>
+        <view class='defined-td'>
+          <view class='select-box flex flex-space flex-centers'>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+              <view class="picker">{{array[index]}}</view>
+            </picker>
+            <image class='daosanjia-icon' src='/image/bottombtn.png'></image>
+          </view>
+        </view>
+        <view class='defined-td'>
+          <view class='select-box flex flex-space flex-centers'>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+              <view class="picker">{{array[index]}}</view>
+            </picker>
+            <image class='daosanjia-icon' src='/image/bottombtn.png'></image>
+          </view>
+        </view>
+      </view>
+      <view class='defined-unit flex  flex-row  flex-space flex-centers'>
+        <text class='defined-name'>轴位</text>
+        <view class='defined-td' style='width:546rpx'>
+          <view class='select-box flex flex-space flex-centers'>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+              <view class="picker">{{array[index]}}</view>
+            </picker>
+            <image class='daosanjia-icon' src='/image/bottombtn.png'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class='defined-btn'>
+      提交数据
+    </view>
+  </view>
+</view>
